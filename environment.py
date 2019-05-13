@@ -2,11 +2,23 @@
 """		Pyautomator Framework de teste 
 
 			TRONWEB"""
+# Pacotes Pyautomators
+from Pyautomators.desk import Desk
+from Pyautomators.mouse_teclado import Teclado
+from Pyautomators.mouse_teclado import Mouse
+from Pyautomators.Verifica import Valida
+from Pyautomators import Ambiente
+from pages.pages.LoginPage import Login
+from pages.pages.ConsultaParametroPage import ConsultaParametro
+# from Pyautomators.contrib.scenario_autoretry import scenario_retry
 
-from Pyautomators import *
+# Modulos extras
 from time import sleep
+
 def before_all(context):
-	pass
+	context.app = Desk('C:\JTron_Homolog\JMenuTron.bat',Driver_Winium='driver\Winium.Desktop.Driver.exe')
+	context.login = Login(context.app)
+	context.consulta_parametro = ConsultaParametro(context.app)
 
 def before_feature(context,feature):
 	pass
