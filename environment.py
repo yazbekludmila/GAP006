@@ -10,6 +10,7 @@ from Pyautomators.Verifica import Valida
 from Pyautomators import Ambiente
 from pages.pages.LoginPage import Login
 from pages.pages.ConsultaParametroPage import ConsultaParametro
+import os
 
 # Modulos extras
 from time import sleep
@@ -38,4 +39,4 @@ def after_feature(context,feature):
 	pass
 
 def after_all(context):
-	pass
+	context.app.fechar_programa()

@@ -1,6 +1,7 @@
 from Pyautomators.desk import Desk
 from Pyautomators.mouse_teclado import Teclado
 from Pyautomators.mouse_teclado import Mouse
+from Pyautomators.Verifica import Valida
 import pyautogui
 # import ctypes
 from time import sleep
@@ -12,13 +13,16 @@ class Login():
         self.app = app
         self.mouse = Mouse()
         self.teclado = Teclado()
+        self.asserts = Valida()
         
     def realiza_login(self):
-        sleep(2)
-        self.mouse.clica_imagem(r'data\images\usuario.PNG', similar=70)
+        while(Valida.verifica_tela("data\images\senha.png", 80, similaridade=50) == None):
+            if(Valida.verifica_tela("data\images\senha.png", 80, similaridade=50) != None):
+                break
+            else:
+                pass
         self.mouse.clica_imagem(r'data\images\senha.PNG', similar=70)
-        
-        self.teclado.escrever_direto('@indra2018bb')
+        self.teclado.escrever_direto('Mapfre2019')
         self.teclado.digitos('enter')
 
     def valida_login(self):
