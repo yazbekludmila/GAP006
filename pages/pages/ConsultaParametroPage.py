@@ -1,7 +1,6 @@
 from Pyautomators.desk import Desk
 from Pyautomators.mouse_teclado import Teclado
 from Pyautomators.mouse_teclado import Mouse
-from time import sleep
 
 class ConsultaParametro():
 
@@ -11,7 +10,7 @@ class ConsultaParametro():
         self.teclado = Teclado()
 
 
-    def consulta_parametro_reasseguro(self, ramo='', produto=''):
+    def consulta_parametro_reasseguro(self):
         self.mouse.clica_imagem(r'data\images\campo_busca.png',similar=70)
         self.teclado.escrever_direto('re21')
         self.teclado.digitos('enter')
@@ -23,3 +22,7 @@ class ConsultaParametro():
         # self.mouse.clica_imagem(r'data\images\input_produto.png',similar=70)
         self.teclado.escrever_direto(produto)
         self.teclado.digitos('enter')
+        self.mouse.clica_imagem(r'data\images\incluir.PNG',similar=80)
+
+        # self.mouse.clica_imagem(r'data\images\botao_fechar.png',similar=70)
+        # self.mouse.clica_imagem(r'data\images\botao_fechar.png',similar=70)
