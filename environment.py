@@ -16,17 +16,21 @@ from pages.pages.IncluiParametroPage import IncluiParametro
 from time import sleep
 
 def before_all(context):
-	context.app = Desk('C:\JTron_Homolog\JMenuTron.bat',Driver_Winium='driver\Winium.Desktop.Driver.exe')
-	context.login = Login(context.app)
-	context.consulta_parametro = ConsultaParametro(context.app)
-	context.inclui_parametro = IncluiParametro(context.app)
+	pass
+	# context.app = Desk('C:\JTron_Homolog\JMenuTron.bat',Driver_Winium='driver\Winium.Desktop.Driver.exe')
+	# context.login = Login(context.app)
+	# context.consulta_parametro = ConsultaParametro(context.app)
+	# context.inclui_parametro = IncluiParametro(context.app)
 
 
 def before_feature(context,feature):
 	pass
 
 def before_scenario(context,scenario):
-	pass
+	context.app = Desk('C:\JTron_Homolog\JMenuTron.bat',Driver_Winium='driver\Winium.Desktop.Driver.exe')
+	context.login = Login(context.app)
+	context.consulta_parametro = ConsultaParametro(context.app)
+	context.inclui_parametro = IncluiParametro(context.app)
 
 def before_step(context,step):
 	pass
@@ -35,7 +39,7 @@ def after_step(context,step):
 	pass
 
 def after_scenario(context,scenario):
-	pass
+	context.app.fechar_programa()
 
 def after_feature(context,feature):
 	pass

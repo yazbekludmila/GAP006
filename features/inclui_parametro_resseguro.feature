@@ -7,7 +7,8 @@ Feature: Inclui parâmetro de reasseguro
    Scenario: Inclui parâmetro de reasseguro   
       When consulto parametros de reasseguro
       Then incluo os parametros de reasseguro
-
+   
+   @invalido
    Scenario: Incluir parâmetros de resseguro invalidos
       When consulto parametros de resseguro
       Then incluo os parametros de resseguro invalidos

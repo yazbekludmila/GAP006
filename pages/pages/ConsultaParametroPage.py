@@ -10,7 +10,7 @@ class ConsultaParametro():
         self.teclado = Teclado()
 
 
-    def consulta_parametro_reasseguro(self):
+   def consulta_parametro_reasseguro(self, ramo='', produto=''):
         self.mouse.clica_imagem(r'data\images\campo_busca.png',similar=70)
         self.teclado.escrever_direto('re21')
         self.teclado.digitos('enter')
@@ -22,7 +22,4 @@ class ConsultaParametro():
         # self.mouse.clica_imagem(r'data\images\input_produto.png',similar=70)
         self.teclado.escrever_direto(produto)
         self.teclado.digitos('enter')
-        self.mouse.clica_imagem(r'data\images\incluir.PNG',similar=80)
 
-        # self.mouse.clica_imagem(r'data\images\botao_fechar.png',similar=70)
-        # self.mouse.clica_imagem(r'data\images\botao_fechar.png',similar=70)
