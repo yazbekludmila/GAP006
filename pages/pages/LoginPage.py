@@ -3,6 +3,7 @@ from Pyautomators.mouse_teclado import Teclado
 from Pyautomators.mouse_teclado import Mouse
 from Pyautomators.Verifica import Valida
 import pyautogui
+import getpass
 # import ctypes
 from time import sleep
 
@@ -23,7 +24,13 @@ class Login():
             else:
                 pass
         self.mouse.clica_imagem(r'data\images\senha.PNG', similar=70)
-        self.teclado.escrever_direto('Mapfre2019')
+        if(getpass.getuser == 'gsilvan'):
+            self.teclado.escrever_direto('Mapfre2019')
+        elif(getpass.getuser == 'jvictorr'):
+            self.teclado.escrever_direto('Mapfre2019')
+        else:
+            print('Usuario não reconhecido.')
+        
         self.teclado.digitos('enter')
 
     def valida_login(self):
