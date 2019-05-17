@@ -9,6 +9,6 @@ Feature: Inclui parâmetro de reasseguro
       Then incluo os parametros de reasseguro
    
    @invalido
-   Scenario: Incluir parâmetros de resseguro invalidos
+   Scenario: Incluir parâmetros de resseguro invalidos enviar re21
       When consulto parametros de resseguro
       Then incluo os parametros de resseguro invalidos
