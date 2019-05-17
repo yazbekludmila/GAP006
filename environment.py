@@ -10,21 +10,23 @@ from Pyautomators.Verifica import Valida
 from Pyautomators import Ambiente
 from pages.pages.LoginPage import Login
 from pages.pages.ConsultaParametroPage import ConsultaParametro
+from pages.pages.MenuPrincipalPage import MenuPrincipal
 import os
 
 # Modulos extras
 from time import sleep
 
 def before_all(context):
-	context.app = Desk('C:\JTron_Homolog\JMenuTron.bat',Driver_Winium='driver\Winium.Desktop.Driver.exe')
-	context.login = Login(context.app)
-	context.consulta_parametro = ConsultaParametro(context.app)
+	pass
 
 def before_feature(context,feature):
 	pass
 
 def before_scenario(context,scenario):
-	pass
+	context.app = Desk('C:\JTron_Homolog\JMenuTron.bat',Driver_Winium='driver\Winium.Desktop.Driver.exe')
+	context.login = Login(context.app)
+	context.consulta_parametro = ConsultaParametro(context.app)
+	context.menu = MenuPrincipal(context.app)
 
 def before_step(context,step):
 	pass
@@ -33,10 +35,10 @@ def after_step(context,step):
 	pass
 
 def after_scenario(context,scenario):
-	pass
+	context.app.fechar_programa()
 
 def after_feature(context,feature):
 	pass
 
 def after_all(context):
-	context.app.fechar_programa()
+	pass

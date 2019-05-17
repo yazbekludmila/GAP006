@@ -7,6 +7,7 @@ import pyautogui
 from time import sleep
 
 
+
 class Login():
 
     def __init__(self, app):
@@ -28,6 +29,7 @@ class Login():
     def valida_login(self):
         sleep(3)
         self.mouse.clica_imagem(r'data\images\tron.PNG', similar=70)
+    
     
 
 
