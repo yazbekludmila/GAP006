@@ -1,8 +1,8 @@
+
 """		Pyautomator Framework de teste 
 
 			TRONWEB"""
 # Pacotes Pyautomators
-
 from Pyautomators.desk import Desk
 from Pyautomators.mouse_teclado import Teclado
 from Pyautomators.mouse_teclado import Mouse
@@ -11,7 +11,9 @@ from Pyautomators import Ambiente
 from pages.pages.LoginPage import Login
 from pages.pages.ConsultaParametroPage import ConsultaParametro
 from pages.pages.MenuPrincipalPage import MenuPrincipal
+from pages.pages.IncluiParametroPage import IncluiParametro
 import os
+
 
 # Modulos extras
 from time import sleep
@@ -27,6 +29,7 @@ def before_scenario(context,scenario):
 	context.login = Login(context.app)
 	context.consulta_parametro = ConsultaParametro(context.app)
 	context.menu = MenuPrincipal(context.app)
+	context.inclui_parametro = IncluiParametro(context.app)
 
 def before_step(context,step):
 	pass
@@ -42,3 +45,4 @@ def after_feature(context,feature):
 
 def after_all(context):
 	pass
+
