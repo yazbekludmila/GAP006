@@ -27,5 +27,3 @@ def step_impl(context):
 @then(u'tela com os campos preenchidos da pesquisa e exibido')
 def step_impl(context):
     pass
-
-

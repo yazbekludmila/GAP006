@@ -24,9 +24,9 @@ class Login():
             else:
                 pass
         self.mouse.clica_imagem(r'data\images\senha.PNG', similar=70)
-        if(getpass.getuser == 'gsilvan'):
+        if(getpass.getuser() == 'gsilvan'):
             self.teclado.escrever_direto('Mapfre2019')
-        elif(getpass.getuser == 'jvictorr'):
+        elif(getpass.getuser() == 'jvictorr'):
             self.teclado.escrever_direto('Mapfre2019')
         else:
             print('Usuario não reconhecido.')
