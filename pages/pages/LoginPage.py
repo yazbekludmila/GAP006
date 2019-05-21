@@ -24,10 +24,13 @@ class Login():
             else:
                 pass
         self.mouse.clica_imagem(r'data\images\senha.PNG', similar=70)
-        if(getpass.getuser == 'gsilvan'):
+
+        # print(getpass.getuser())
+
+        if(getpass.getuser() == 'gsilvan'):
             self.teclado.escrever_direto('Mapfre2019')
-        elif(getpass.getuser == 'jvictorr'):
-            self.teclado.escrever_direto('Mapfre2019')
+        elif(getpass.getuser() == 'jvictorr'):
+            self.teclado.escrever_direto('@indra2018bb')
         else:
             print('Usuario não reconhecido.')
         

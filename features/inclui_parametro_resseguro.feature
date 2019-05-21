@@ -8,7 +8,12 @@ Feature: Inclui parâmetro de reasseguro
       When consulto parametros de reasseguro
       Then incluo os parametros de reasseguro
    
-   @invalido
+   @invalido_re21
    Scenario: Incluir parâmetros de resseguro invalidos enviar re21
       When consulto parametros de resseguro
-      Then incluo os parametros de resseguro invalidos
+      Then incluo os parametros de resseguro invalidos enviar re21
+
+   @invalido_apolice
+   Scenario: Incluir parâmetros de resseguro invalidos apolice
+      When consulto parametros de resseguro
+      Then incluo os parametros de resseguro invalidos apolice

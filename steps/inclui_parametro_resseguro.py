@@ -4,8 +4,12 @@ def step_impl(context):
 
 @then(u'incluo os parametros de reasseguro')
 def step_impl(context):
-    context.inclui_parametro.inclui_parametro()
+    context.inclui_parametro.inclui_parametro_re21()
 
-@then(u'incluo os parametros de resseguro invalidos')
+@then(u'incluo os parametros de resseguro invalidos enviar re21')
 def step_impl(context):
-    context.inclui_parametro.inclui_parametro_resseguro_invalido()
+    context.inclui_parametro.inclui_parametro_resseguro_invalido_re21()
+
+@then(u'incluo os parametros de resseguro invalidos apolice')
+def step_impl(context):
+    context.inclui_parametro.inclui_parametro_resseguro_invalido_apolice()
