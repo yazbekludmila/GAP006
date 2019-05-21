@@ -8,11 +8,6 @@ class TronWeb():
         self.app = app
 
     def realizar_login(self):
-        while(self.app.verifica_tela("data\images\senha.png", 80, similaridade=50) == None):
-            if(self.app.verifica_tela("data\images\senha.png", 80, similaridade=50) != None):
-                break
-            else:
-                pass
         self.app.clica_imagem(r'data\images\senha.PNG', similar=70)
         if(getpass.getuser() == 'gsilvan'):
             self.app.escrever_direto('Mapfre2019')
