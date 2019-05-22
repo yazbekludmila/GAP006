@@ -160,15 +160,7 @@ class IncluiParametro():
         # self.teclado.digitos('tab')
         self.mouse.clica_imagem(r'data\images\msg_campo_data.png',similar=80)
         self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
-        ### Exibe a msg "TAMANHO DO CAMPO INCORRETA".
-        data_atual = date.today()
-        data_atual = '{}0{}{}'.format(data_atual.day, data_atual.month, data_atual.year)
-
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\cobertura.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_cobertura.PNG',similar=80)
+        self.clicar_campo_cobertura()
         self.teclado.digitos('tab')
         self.teclado.digitos('tab')
         self.teclado.digitos('tab')
@@ -178,6 +170,8 @@ class IncluiParametro():
         self.teclado.digitos('tab')
         self.mouse.clica_imagem(r'data\images\msg_tamanho_campo_incorreta.png',similar=80)
         self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
+    
+
 
 
 
