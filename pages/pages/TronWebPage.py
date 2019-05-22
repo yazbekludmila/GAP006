@@ -8,19 +8,11 @@ class TronWeb():
         self.app = app
 
     def realizar_login(self):
-<<<<<<< HEAD
-=======
-        while(self.app.verifica_tela("data\images\senha.png", 80, similaridade=50) == None):
-            if(self.app.verifica_tela("data\images\senha.png", 80, similaridade=50) != None):
-                break
-            else:
-                pass
->>>>>>> df39163... 'Excel'
         self.app.clica_imagem(r'data\images\senha.PNG', similar=70)
         if(getpass.getuser() == 'gsilvan'):
             self.app.escrever_direto('Mapfre2019')
         elif(getpass.getuser() == 'jvictorr'):
-            self.teclado.escrever_direto('Mapfre2019')
+            self.app.escrever_direto('@indra2018bb')
         else:
             print('Usuario não reconhecido.')
         self.app.digitos('enter')
@@ -53,9 +45,9 @@ class TronWeb():
                 pass
 
     def get_data_atual(self):
-        data_atual = datetime.today().strftime('%d/%m/%Y')
+        data_atual = datetime.today().strftime('%d%m%Y')
         return data_atual
 
     def get_data_futura(self):
-        data_futura = (datetime.today() + relativedelta(years=1)).strftime('%d/%m/%Y')
+        data_futura = (datetime.today() + relativedelta(years=1)).strftime('%d%m%Y')
         return data_futura
