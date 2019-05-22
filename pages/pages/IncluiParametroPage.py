@@ -163,6 +163,8 @@ class IncluiParametro():
         self.teclado.digitos('tab')
         self.mouse.clica_imagem(r'data\images\msg_tamanho_campo_incorreta.png',similar=80)
         self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
+    
+
 
 
     def inclui_parametro_resseguro_invalido_apolice(self):
