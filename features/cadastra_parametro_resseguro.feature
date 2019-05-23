@@ -34,11 +34,11 @@ Feature: Cadastrar parâmetros de resseguro para integração com sistema RE21
       And consulto parametros de reasseguro
       Then incluo os parametros de reasseguro
 
-   # @CP010
-   # Scenario: Incluir parâmetros de resseguro invalidos enviar re21
-   #   When abrir o Parametrizacao do Envio Re21
-   #    And consulto parametros de resseguro
-   #   Then incluo os parametros de resseguro invalidos enviar re21
+   @CP010
+   Scenario: Incluir parâmetros de resseguro invalidos enviar re21
+      When abrir o Parametrizacao do Envio Re21
+       And consulto parametros de resseguro
+      Then incluo os parametros de resseguro invalidos enviar re21
 
    @CP011
    Scenario: Incluir parâmetros de resseguro invalidos apolice

@@ -17,6 +17,12 @@ class IncluiParametro():
         self.app.escrever_direto(cobertura)
         self.app.digitos('tab')
 
+    def digitar_ramo(self, ramo):
+        self.app.clica_imagem(r'data\images\ramo.PNG',similar=80)
+        self.app.clica_imagem(r'data\images\input_ramo.PNG',similar=80)
+        self.app.escrever_direto(ramo)
+        self.app.digitos('tab')
+
     def digitar_modalidade(self,modalidade):
         self.app.clica_imagem(r'data\images\campo_modalidade.PNG',similar=80)
         self.app.escrever_direto(modalidade)
