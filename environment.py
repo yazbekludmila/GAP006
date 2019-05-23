@@ -14,6 +14,7 @@ from pages.pages.CadastroApolicesEnvioRe21Page import CadastroApolice
 from pages.pages.IncluiParametroPage import IncluiParametro
 from data.data import Data
 import os
+import getpass
 
 
 # Modulos extras
@@ -26,7 +27,11 @@ def before_feature(context,feature):
 	pass
 
 def before_scenario(context,scenario):
-	context.app = Desk('C:\JTron_Homolog\JMenuTron.bat',Driver_Winium='driver\Winium.Desktop.Driver.exe')
+	if(getpass.getuser() == 'mconceicaos'):
+		context.app = Desk('/home/JMenuTron.bat',Driver_Winium='/home/Winium.Desktop.Driver.exe')
+	else:
+		context.app = Desk('C:\JTron_Homolog\JMenuTron.bat',Driver_Winium='driver\Winium.Desktop.Driver.exe')
+	
 	# context.login = Login(context.app)
 	context.consulta_parametro = ConsultaParametro(context.app)
 #	context.menu = MenuPrincipal(context.app)

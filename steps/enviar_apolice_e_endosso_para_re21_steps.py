@@ -1,11 +1,5 @@
 
-#****************** Cenário - Validar nao envio ao RE21 de Endosso como parametro inabilitado ***************#
-
-@when(u'abrir o {}')
-def step_impl(context,opcao):
-    context.tronweb.selecionar_menu_atualizacoes(opcao)
-    #context.tronweb.validacao_tela(imagem=r'')
-    
+#****************** Cenário - Validar nao envio ao RE21 de Endosso como parametro inabilitado ***************#    
 
 @when(u'preencher os dados para a consulta')
 def step_impl(context):
