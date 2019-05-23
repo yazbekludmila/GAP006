@@ -33,7 +33,7 @@ class TronWeb():
             self.app.clica_imagem(r'data\images\cadastro_apolice.png', similar=70, cliques=2)
         elif(opcao == 'Emissao de Apolices e Endosso'):
             self.app.clica_imagem(r'data\images\opcao_emissao_de_apolices.png', similar=70, cliques=2)
-        elif(opcao == 'Parametrizacao de Envio'):
+        elif(opcao == 'Parametrizacao de Envio Re21'):
             pass
 
     def validacao_tela(self,imagem):
