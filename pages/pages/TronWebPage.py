@@ -28,13 +28,21 @@ class TronWeb():
             print('Selecione uma opcao valida.')
     
     def selecionar_menu_atualizacoes(self,opcao):
+        self.selecionar_menu_emissao('Menu de Atualizacoes')
         if(opcao == 'Cadastro Apolices Envio RE21'):
             self.app.clica_imagem(r'data\images\baixo.png', similar=70, cliques=4)
             self.app.clica_imagem(r'data\images\cadastro_apolice.png', similar=70, cliques=2)
         elif(opcao == 'Emissao de Apolices e Endosso'):
             self.app.clica_imagem(r'data\images\opcao_emissao_de_apolices.png', similar=70, cliques=2)
+<<<<<<< HEAD
         elif(opcao == 'Parametrizacao de Envio Re21'):
             pass
+=======
+        elif(opcao == 'Parametrizacao do Envio Re21'):
+            self.app.clica_imagem(r'data\images\baixo.png', similar=40, cliques=13)
+            self.app.clica_imagem(r'data\images\botao_direita.png', similar=70, cliques=2)
+            self.app.clica_imagem(r'data\images\parametrizacao_envio.png',similar=70, cliques=2)
+>>>>>>> 153a6b9708e2c1537c48a894ad1b80512b92e7dd
 
     def validacao_tela(self,imagem):
         tentativas = 50

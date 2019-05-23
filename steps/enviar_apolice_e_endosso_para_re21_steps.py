@@ -3,9 +3,8 @@
 
 @when(u'abrir o {}')
 def step_impl(context,opcao):
-    #context.tronweb.selecionar_menu_atualizacoes(opcao)
+    context.tronweb.selecionar_menu_atualizacoes(opcao)
     #context.tronweb.validacao_tela(imagem=r'')
-    pass
     
 
 @when(u'preencher os dados para a consulta')
