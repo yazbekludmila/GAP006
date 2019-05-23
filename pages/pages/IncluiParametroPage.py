@@ -1,295 +1,54 @@
-from Pyautomators.desk import Desk
-from Pyautomators.mouse_teclado import Teclado
-from Pyautomators.mouse_teclado import Mouse
-from pages.pages.TronWebPage import TronWeb
-from data.data import Data
-
-# Classes extras
-from datetime import date
-from time import sleep
-from dateutil.relativedelta import relativedelta
+import getpass 
 
 class IncluiParametro():
 
-    def __init__(self, app):
+    def __init__(self, app, tron):
         self.app = app
-        self.mouse = Mouse()
-        self.teclado = Teclado()
-        self.tron = TronWeb(self.app)
-        self.data = Data(self.app)
-
-    def inclui_parametro_re21(self):
-        self.tron.validacao_tela(imagem=r'data\images\criar_registro.PNG')
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\cobertura.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_cobertura.PNG',similar=80)
-        self.teclado.escrever_direto(self.data.cobertura())
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto('10000')
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto(self.tron.get_data_atual())
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto(self.tron.get_data_futura())
-        self.mouse.clica_imagem(r'data\images\aceitar3.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\vigencia_cadastrada.PNG',similar=80)
-
-    def inclui_parametro_resseguro_invalido_re21(self):
-        ### Exibe a msg "Em um campo numérico somente podem ser introduzidos numeros".
-        self.tron.validacao_tela(imagem=r'data\images\criar_registro.PNG')
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\cobertura.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_cobertura.PNG',similar=80)
-        self.teclado.escrever_direto('!@#$')
-        self.teclado.digitos('tab')
-        self.tron.validacao_tela(imagem=r'data\images\msg_campo_numerico.PNG')
-        self.mouse.clica_imagem(r'data\images\msg_campo_numerico.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
-        ### Exibe a msg "VALOR INVALIDO".
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\ramo.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_ramo.PNG',similar=80)
-        self.teclado.escrever_direto('0')
-        self.teclado.digitos('tab')
-        self.tron.validacao_tela(imagem=r'data\images\msg_valor_invalido.PNG')
-        self.mouse.clica_imagem(r'data\images\msg_valor_invalido.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
-        ### Exibe a msg "COBERTURA INVALIDA PARA O PRODUTO".
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\cobertura.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_cobertura.PNG',similar=80)
-        self.teclado.escrever_direto('0000')
-        self.teclado.digitos('tab')
-        self.tron.validacao_tela(imagem=r'data\images\msg_cobertura_invalida.PNG')
-        self.mouse.clica_imagem(r'data\images\msg_cobertura_invalida.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
-        ### Exibe a msg "Em um campo numérico somente podem ser introduzidos numeros".
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\cobertura.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_cobertura.PNG',similar=80)
-        self.teclado.escrever_direto('9999')
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto('!@#$')
-        self.teclado.digitos('tab')
-        self.tron.validacao_tela(imagem=r'data\images\msg_campo_numerico.PNG')
-        self.mouse.clica_imagem(r'data\images\msg_campo_numerico.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
-        ### Exibe a msg "Em um campo numérico somente podem ser introduzidos numeros".
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\cobertura.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_cobertura.PNG',similar=80)
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto('!@#$')
-        self.tron.validacao_tela(imagem=r'data\images\msg_campo_data.PNG')
-        self.mouse.clica_imagem(r'data\images\msg_campo_data.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
-        ### Exibe a msg "FORMATO NÃO VALIDO (ddMMyyyy)". - 
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\cobertura.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_cobertura.PNG',similar=80)
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto('00000000')
-        self.teclado.digitos('tab')
-        self.tron.validacao_tela(imagem=r'data\images\msg_formato_nao_valido.PNG')
-        self.mouse.clica_imagem(r'data\images\msg_formato_nao_valido.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
-
-        ### Exibe a msg "FORMATO NÃO VALIDO (ddMMyyyy)". - 
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\cobertura.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_cobertura.PNG',similar=80)
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto(self.tron.get_data_atual())
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto('!@#!')
-        self.tron.validacao_tela(imagem=r'data\images\msg_campo_data.png')
-        self.mouse.clica_imagem(r'data\images\msg_campo_data.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
-        ### Exibe a msg "FORMATO NÃO VALIDO (ddMMyyyy)". - 
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\cobertura.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_cobertura.PNG',similar=80)
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto(self.tron.get_data_atual())
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto('00-00-0000')
-        self.tron.validacao_tela(imagem=r'data\images\msg_campo_data.png')
-        self.mouse.clica_imagem(r'data\images\msg_campo_data.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
-        ### Exibe a msg "Em um campo numérico somente podem ser introduzidos numeros".
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\cobertura.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_cobertura.PNG',similar=80)
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto(self.tron.get_data_atual())
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto('!@#$')
-        self.tron.validacao_tela(imagem=r'data\images\msg_campo_data.png')
-        self.mouse.clica_imagem(r'data\images\msg_campo_data.png',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
-        ### Exibe a msg "TAMANHO DO CAMPO INCORRETA".
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\cobertura.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_cobertura.PNG',similar=80)
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto(self.tron.get_data_atual())
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto('2999')
-        self.teclado.digitos('tab')
-        self.tron.validacao_tela(imagem=r'data\images\msg_tamanho_campo_incorreta.png')
-        self.mouse.clica_imagem(r'data\images\msg_tamanho_campo_incorreta.png',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
+        self.validacao = tron
     
+    def abrir_criar_registro(self):
+        self.validacao.validacao_tela(imagem=r'data\images\criar_registro.PNG')
+        self.app.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
+        self.validacao.validacao_tela(imagem=r'data\images\cobertura.PNG')
+    
+    def digitar_cobertura(self,cobertura):
+        self.app.clica_imagem(r'data\images\cobertura.PNG',similar=80)
+        self.app.clica_imagem(r'data\images\input_cobertura.PNG',similar=80)
+        self.app.escrever_direto(cobertura)
+        self.app.digitos('tab')
 
-    def inclui_parametro_resseguro_invalido_apolice(self):
-        ### Exibe a msg "Em um campo numérico somente podem ser introduzidos numeros".
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\clique_validacao_apolice.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\ramo.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_ramo.PNG',similar=80)
-        self.teclado.escrever_direto('!@#$')
-        self.teclado.digitos('tab')
-        self.tron.validacao_tela(imagem=r'data\images\msg_campo_numerico.PNG')
-        self.mouse.clica_imagem(r'data\images\msg_campo_numerico.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
+    def digitar_modalidade(self,modalidade):
+        self.app.clica_imagem(r'data\images\campo_modalidade.PNG',similar=80)
+        self.app.escrever_direto(modalidade)
+        self.app.digitos('tab')
 
-        ### Exibe a msg "VALOR INVALIDO".
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\clique_validacao_apolice.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\ramo.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_ramo.PNG',similar=80)
-        self.teclado.escrever_direto('0')
-        self.teclado.digitos('tab')
-        self.mouse.clica_imagem(r'data\images\aceitar3.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\msg_valor_invalido.PNG')
-        self.mouse.clica_imagem(r'data\images\msg_valor_invalido.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
+    def digitar_imp_segurada(self,imp):
+        self.app.clica_imagem(r'data\images\campo_imp_segurada.PNG',similar=80)
+        self.app.escrever_direto(imp)
+        self.app.digitos('tab')
 
-        ### Exibe a msg "VALOR INVALIDO".
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\clique_validacao_apolice.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\ramo.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_ramo.PNG',similar=80)
-        self.teclado.escrever_direto('18')
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto('0')
-        self.mouse.clica_imagem(r'data\images\aceitar3.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\msg_valor_invalido.PNG')
-        self.mouse.clica_imagem(r'data\images\msg_valor_invalido.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
+    def preencher_vigencia(self,data_atual,data_final):
+        self.app.clica_imagem(r'data\images\campo_inicio_vigencia.PNG',similar=80)
+        self.app.escrever_direto(data_atual)
+        self.app.digitos('tab')
+        self.app.escrever_direto(data_final)
 
-        ### Exibe a msg "Em um campo numérico somente podem ser introduzidos numeros".
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\clique_validacao_apolice.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\ramo.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_ramo.PNG',similar=80)
-        self.teclado.escrever_direto('!@#$')
-        self.teclado.digitos('tab')
-        self.mouse.clica_imagem(r'data\images\aceitar3.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\msg_campo_numerico.PNG')
-        self.mouse.clica_imagem(r'data\images\msg_campo_numerico.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
+    def validar_mensagem(self,mensagem=''):
+        self.validacao.validacao_tela(imagem=mensagem)
+        self.app.clica_imagem(mensagem,similar=80)
 
-        ### Exibe a msg "Em um campo numérico somente podem ser introduzidos numeros".
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\clique_validacao_apolice.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\ramo.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_ramo.PNG',similar=80)
-        self.teclado.escrever_direto('18')
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto('!@#$')
-        self.mouse.clica_imagem(r'data\images\aceitar3.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\msg_campo_numerico.PNG')
-        self.mouse.clica_imagem(r'data\images\msg_campo_numerico.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
+    def fechar_criacao_de_registro(self):
+        user = getpass.getuser()
+        if(user == 'gsilvan'):
+            self.app.clica_imagem(r'data\images\botao_fechar_gsilvan.PNG',similar=80)
+        elif(user == 'jvictorr'):
+            self.app.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
+        elif(user == 'mconceicaos'):
+            pass
+        else:
+            print('Usuário não cadastrado.')
 
-    def inclui_registro_cadastrado_validacao_apolice(self):
-        ### Exibe a msg "PRODUTO JÁ ESTA VALIDADO".
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\clique_validacao_apolice.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\ramo.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\input_ramo.PNG',similar=80)
-        self.teclado.escrever_direto('18')
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto('117')
-        self.mouse.clica_imagem(r'data\images\aceitar3.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\msg_produto_validado.PNG')
-        self.mouse.clica_imagem(r'data\images\msg_produto_validado.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
+    def aceitar_criacao_registro(self):
+        self.app.clica_imagem(r'data\images\aceitar3.PNG',similar=80)
 
-    def inclui_registro_cadastrado_enviar_re21(self):
-        ### Exibe a msg "PRODUTO JÁ ESTA VALIDADO".
-        self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
-        self.mouse.clica_imagem(r'data\images\criacao_modificacao_dados.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\cobertura.PNG')
-        self.mouse.clica_imagem(r'data\images\cobertura.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\input_cobertura.PNG')
-        self.mouse.clica_imagem(r'data\images\input_cobertura.PNG',similar=80)
-        self.teclado.escrever_direto('9999')
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto(self.tron.get_data_atual())
-        self.teclado.digitos('tab')
-        self.teclado.escrever_direto(self.tron.get_data_futura())
-        self.mouse.clica_imagem(r'data\images\aceitar3.PNG',similar=80)
-        self.tron.validacao_tela(imagem=r'data\images\msg_vigencia_cadastrada.PNG')
-        self.mouse.clica_imagem(r'data\images\msg_vigencia_cadastrada.PNG',similar=80)
-        self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
+   

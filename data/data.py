@@ -12,6 +12,13 @@ class Data():
         arquivo = excel('./data/data.xlsx', 'EnvioApoliceEndossoRE21')
         values = dict(zip(arquivo['campo de input'], arquivo['valor']))
         return values
+    
+    def read_excel_cadastro_parametro(self):
+        arquivo = excel('./data/data.xlsx', 'CadastroParametrosResseguro')
+        values = dict(zip(arquivo['campo de input'], arquivo['valor']))
+        return values
+    
+    '''******************* Enviar Apolice e Endosso RE21 ************************'''
 
     def numero_de_cobertura(self):
         return self.read_excel_envio_apolice().get('Número de cobertura', '')
@@ -27,8 +34,16 @@ class Data():
 
     def numero_da_apolice(self):
         return self.read_excel_envio_apolice().get('Número da apolice', '')
+    
+    '''******************* Cadastra Parametro Resseguro ************************'''
 
     def cobertura(self):
-        return str(self.read_excel_envio_apolice().get('Cobertura', ''))
+        return str(self.read_excel_cadastro_parametro().get('Cobertura', ''))
+    
+    def modalidade(self):
+        return str(self.read_excel_cadastro_parametro().get('Modalidade', ''))
+    
+    def imp_segurada(self):
+        return str(self.read_excel_cadastro_parametro().get('Imp segurada', ''))
 
     

@@ -30,8 +30,8 @@ def before_scenario(context,scenario):
 	# context.login = Login(context.app)
 	context.consulta_parametro = ConsultaParametro(context.app)
 #	context.menu = MenuPrincipal(context.app)
-	context.inclui_parametro = IncluiParametro(context.app)
 	context.tronweb = TronWeb(context.app)
+	context.inclui_parametro = IncluiParametro(context.app, context.tronweb)
 	context.dados = Data(context.app)
 	context.cadastro_apolice = CadastroApolice(context.app)
 
