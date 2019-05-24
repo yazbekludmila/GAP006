@@ -3,3 +3,8 @@ def step_impl(context):
     context.tronweb.validacao_tela(imagem=r"data\images\senha.png")
     context.tronweb.realizar_login()
     context.tronweb.validacao_tela(imagem=r'data\images\tron.PNG')
+
+@when(u'abrir o {}')
+def step_impl(context,opcao):
+    context.tronweb.selecionar_menu_atualizacoes(opcao)
+    
