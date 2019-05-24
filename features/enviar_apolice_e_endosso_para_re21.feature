@@ -5,10 +5,52 @@ Feature: Enviar Apolice e Endosso para RE21
    Given que usuario esta logado sistema com usuario valido
 
     @CP016
-    Scenario: Realizar emissao de aplice manualmente com parametro para envio ao RE21
+    Scenario: Realizar emissao de apolice manualmente com parametro para envio ao RE21
     When abrir o Emissao de Apolices e Endosso
     And preencher os campos necessarios da tela Emissao de Apolices Endossos
     And preencher os dados variaveis obrigatorios da Emissao de Apolices e Endossos
+
+    @CP017
+    Scenario: Validar envio de Apolice ao RE21 conforme parametro
+    When abrir o Cadastro Apolices Envio RE21
+    And pesquisar pelo numero da apolice
+    Then o sistema exibe tela com resultado da consulta da apolice
+
+    @CP018
+    Scenario: Realizar emissao de Endosso manualmente com parametro para envio ao RE21
+    When abrir o Emissao de Apolices e Endosso
+    And preencher os formularios necessarios para a emissao do endosso
+    Then o endosso e emitido com sucesso
+
+    @CP019
+    Scenario: Validar envio de Endosso ao RE21 conforme parametro
+    When abrir o Cadastro Apolices Envio RE21
+    And pesquisar pelo numero do endosso
+    Then o sistema exibe tela com resultado da consulta do endosso
+
+    @CP020
+    Scenario: Realizar emissao de Apolice manualmente sem parametro
+    When abrir o Emissao de Apolices e Endosso
+    And preencher os formularios necessarios para emissao de apolice sem parametro
+    Then a apolice e gerada com sucesso
+
+    @CP021
+    Scenario: Validar o nao envio ao RE21 da Apolice sem parametro
+    When abrir o Cadastro Apolices Envio RE21
+    And pesquisar pelo numero da apolice gerada sem parametro
+    Then o resultado da busca e exibida
+
+    @CP022
+    Scenario: Realizar emissao de endosso manualmente sem parametro
+    When abrir o Emissao de Apolices e Endosso
+    And preencher os dados para a emissao de endosso sem parametro
+    Then a emissao e realizada com sucesso
+    
+    @CP023
+    Scenario: Validar nao envio ao RE21 de Endosso sem parametro
+    When abrir o Cadastro Apolices Envio RE21
+    And preencher os dados com o endosso gerado sem parametro
+    Then a validacao sobre o nao envio e exibida com sucesso
 
     @CP031
     Scenario: Validar o nao envio ao RE21 de endosso com data de emissao superior a parametrizada

@@ -27,7 +27,14 @@ Feature: Cadastrar parâmetros de resseguro para integração com sistema RE21
       When abrir o Parametrizacao do Envio Re21
       And consulto parametros de reasseguro sem preencher nenhum campo
       Then mensagem de CAMPO OBRIGATORIO e exibido
-
+   
+   @CP008
+   Scenario: Validar o histórico dos registros alterados
+      When abrir o Parametrizacao do Envio Re21
+      And preencher o campo de ramo com dados que foram alterados
+      And preencher o campo de produto com dados que foram alterados
+      Then a pesquisa com os parametros alterados e retornada com sucesso
+   
    @CP009
    Scenario: Inclui parâmetro de reasseguro
       When abrir o Parametrizacao do Envio Re21
@@ -45,6 +52,21 @@ Feature: Cadastrar parâmetros de resseguro para integração com sistema RE21
       When abrir o Parametrizacao do Envio Re21
       And consulto parametros de resseguro
       Then incluo os parametros de resseguro invalidos apolice
+   
+   @CP012
+   Scenario: Validar o histórico dos registros excluidos
+      When abrir o Parametrizacao do Envio Re21
+      And consultar os dados que foram excluidos
+      Then valida o historico de registro na tela de Parametrizacao de Envio
+   
+   @CP013
+   Scenario: Excluir parametros de resseguro
+      When abrir o Parametrizacao do Envio Re21
+      And preencher os dados para realizar a pesquisa e consultar
+      And selecionar o campo que deseja excluir e clicar em Eliminar registro
+      Then ao clicar em qualquer outro campo, a mensagem de Modificacoes Pendentes e exibida
+      When clicar em SIM 
+      Then o registro foi excluido definitivamente
 
    @CP014
    Scenario: Incluir registro ja cadastrados validacao apolice
