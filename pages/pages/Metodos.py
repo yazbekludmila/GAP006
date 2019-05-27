@@ -17,6 +17,7 @@
         self.mouse.clica_imagem(r'data\images\vigencia_cadastrada.PNG',similar=80)
 
     def inclui_parametro_resseguro_invalido_re21(self):
+        1
         ### Exibe a msg "Em um campo numérico somente podem ser introduzidos numeros".
         self.tron.validacao_tela(imagem=r'data\images\criar_registro.PNG')
         self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
@@ -29,7 +30,8 @@
         self.tron.validacao_tela(imagem=r'data\images\msg_campo_numerico.PNG')
         self.mouse.clica_imagem(r'data\images\msg_campo_numerico.PNG',similar=80)
         self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
+        
+        2
         ### Exibe a msg "VALOR INVALIDO".
         self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
         self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
@@ -41,7 +43,8 @@
         self.tron.validacao_tela(imagem=r'data\images\msg_valor_invalido.PNG')
         self.mouse.clica_imagem(r'data\images\msg_valor_invalido.PNG',similar=80)
         self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
+        
+        3
         ### Exibe a msg "COBERTURA INVALIDA PARA O PRODUTO".
         self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
         self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
@@ -53,7 +56,8 @@
         self.tron.validacao_tela(imagem=r'data\images\msg_cobertura_invalida.PNG')
         self.mouse.clica_imagem(r'data\images\msg_cobertura_invalida.PNG',similar=80)
         self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
+        
+        4
         ### Exibe a msg "Em um campo numérico somente podem ser introduzidos numeros".
         self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
         self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
@@ -69,6 +73,7 @@
         self.mouse.clica_imagem(r'data\images\msg_campo_numerico.PNG',similar=80)
         self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
 
+        5
         ### Exibe a msg "Em um campo numérico somente podem ser introduzidos numeros".
         self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
         self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
@@ -82,7 +87,8 @@
         self.tron.validacao_tela(imagem=r'data\images\msg_campo_data.PNG')
         self.mouse.clica_imagem(r'data\images\msg_campo_data.PNG',similar=80)
         self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
+        
+        6
         ### Exibe a msg "FORMATO NÃO VALIDO (ddMMyyyy)". - 
         self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
         self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
@@ -98,7 +104,7 @@
         self.mouse.clica_imagem(r'data\images\msg_formato_nao_valido.PNG',similar=80)
         self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
 
-
+        7
         ### Exibe a msg "FORMATO NÃO VALIDO (ddMMyyyy)". - 
         self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
         self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
@@ -115,6 +121,7 @@
         self.mouse.clica_imagem(r'data\images\msg_campo_data.PNG',similar=80)
         self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
 
+        8
         ### Exibe a msg "FORMATO NÃO VALIDO (ddMMyyyy)". - 
         self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
         self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
@@ -130,7 +137,8 @@
         self.tron.validacao_tela(imagem=r'data\images\msg_campo_data.png')
         self.mouse.clica_imagem(r'data\images\msg_campo_data.PNG',similar=80)
         self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
+        
+        9
         ### Exibe a msg "Em um campo numérico somente podem ser introduzidos numeros".
         self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
         self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')
@@ -146,7 +154,8 @@
         self.tron.validacao_tela(imagem=r'data\images\msg_campo_data.png')
         self.mouse.clica_imagem(r'data\images\msg_campo_data.png',similar=80)
         self.mouse.clica_imagem(r'data\images\botao_fechar.PNG',similar=80)
-
+        
+        10
         ### Exibe a msg "TAMANHO DO CAMPO INCORRETA".
         self.mouse.clica_imagem(r'data\images\criar_registro.PNG',similar=80)
         self.tron.validacao_tela(imagem=r'data\images\criacao_modificacao_dados.PNG')

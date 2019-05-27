@@ -46,6 +46,90 @@ def step_impl(context):
     context.inclui_parametro.fechar_criacao_de_registro()
     '''*****************************************************************************'''
 
+    '''****** Exibe a msg "Em um campo numérico somente podem ser introduzidos numeros"""" ******'''
+    context.inclui_parametro.abrir_criar_registro()
+    context.inclui_parametro.digitar_cobertura('')
+    context.inclui_parametro.digitar_modalidade('')
+    context.app.escrever_direto('!@#$')
+    context.app.digitos('tab')
+    context.inclui_parametro.validar_mensagem(mensagem=r'data\images\msg_campo_numerico.PNG')
+    context.inclui_parametro.fechar_criacao_de_registro()
+    '''*****************************************************************************'''
+
+    '''****** Exibe a msg "FORMATO NÃO VALIDO (ddMMyyyy)"."""" ******'''
+    context.inclui_parametro.abrir_criar_registro()
+    context.inclui_parametro.digitar_cobertura('')
+    context.inclui_parametro.digitar_modalidade('')
+    context.app.digitos('tab')
+    context.inclui_parametro.preencher_vigencia('00000000', '')
+    context.inclui_parametro.validar_mensagem(mensagem=r'data\images\msg_formato_nao_valido.PNG')
+    context.inclui_parametro.fechar_criacao_de_registro()
+    '''*****************************************************************************'''
+
+    '''****** Exibe a msg "FORMATO NÃO VALIDO (ddMMyyyy)"."""" ******'''
+    context.inclui_parametro.abrir_criar_registro()
+    context.inclui_parametro.digitar_cobertura('')
+    context.inclui_parametro.digitar_modalidade('')
+    context.app.digitos('tab')
+    context.inclui_parametro.preencher_vigencia(data_atual=context.tronweb.get_data_atual(), data_final='!@#!')
+    context.inclui_parametro.validar_mensagem(mensagem=r'data\images\msg_campo_data.png')
+    context.inclui_parametro.fechar_criacao_de_registro()
+    '''*****************************************************************************'''
+
+    '''****** Exibe a msg "FORMATO NÃO VALIDO (ddMMyyyy)"."""" ******'''
+    context.inclui_parametro.abrir_criar_registro()
+    context.inclui_parametro.digitar_cobertura('')
+    context.inclui_parametro.digitar_modalidade('')
+    context.app.digitos('tab')
+    context.inclui_parametro.preencher_vigencia(data_atual=context.tronweb.get_data_atual(), data_final='00-00-0000')
+    context.inclui_parametro.validar_mensagem(mensagem=r'data\images\msg_campo_data.png')
+    context.inclui_parametro.fechar_criacao_de_registro()
+    '''*****************************************************************************'''
+
+    '''****** Exibe a msg "Em um campo numérico somente podem ser introduzidos numeros""""" ******'''
+    context.inclui_parametro.abrir_criar_registro()
+    context.inclui_parametro.digitar_cobertura('')
+    context.inclui_parametro.digitar_modalidade('')
+    context.app.digitos('tab')
+    context.inclui_parametro.preencher_vigencia(data_atual=context.tronweb.get_data_atual(), data_final='!@#$')
+    context.inclui_parametro.validar_mensagem(mensagem=r'data\images\msg_campo_data.png')
+    context.inclui_parametro.fechar_criacao_de_registro()
+    '''*****************************************************************************'''
+
+    '''****** Exibe a msg "TAMANHO DO CAMPO INCORRETA"""""" ******'''
+    context.inclui_parametro.abrir_criar_registro()
+    context.inclui_parametro.digitar_cobertura('')
+    context.inclui_parametro.digitar_modalidade('')
+    context.app.digitos('tab')
+    context.inclui_parametro.preencher_vigencia(data_atual=context.tronweb.get_data_atual(), data_final='2999')
+    context.app.digitos('tab')
+    context.inclui_parametro.validar_mensagem(mensagem=r'data\images\msg_tamanho_campo_incorreta.png')
+    context.inclui_parametro.fechar_criacao_de_registro()
+    '''*****************************************************************************'''
+
 @then(u'incluo os parametros de resseguro invalidos apolice')
 def step_impl(context):
-    context.inclui_parametro.inclui_parametro_resseguro_invalido_apolice()
+
+    '''****** Exibe a msg "Em um campo numérico somente podem ser introduzidos numeros""""""" ******'''
+    context.inclui_parametro.abrir_criar_registro()
+    context.inclui_parametro.digitar_ramo('!@#$')
+    context.inclui_parametro.validar_mensagem(mensagem=r'data\images\msg_campo_numerico.PNG')
+    context.inclui_parametro.fechar_criacao_de_registro()
+    '''*****************************************************************************'''
+    
+    '''****** Exibe a msg "VALOR INVALIDO"""""""" ******'''
+    context.inclui_parametro.abrir_criar_registro()
+    context.inclui_parametro.digitar_ramo('0')
+    context.app.clica_imagem(r'data\images\aceitar3.PNG',similar=80)
+    context.inclui_parametro.validar_mensagem(mensagem=r'data\images\msg_valor_invalido.PNG')
+    context.inclui_parametro.fechar_criacao_de_registro()
+    '''*****************************************************************************'''
+
+    '''****** Exibe a msg "VALOR INVALIDO"""""""" ******'''
+    context.inclui_parametro.abrir_criar_registro()
+    context.inclui_parametro.digitar_ramo('18')
+    context.app.escrever_direto('0')
+    context.app.clica_imagem(r'data\images\aceitar3.PNG',similar=80)
+    context.inclui_parametro.validar_mensagem(mensagem=r'data\images\msg_valor_invalido.PNG')
+    context.inclui_parametro.fechar_criacao_de_registro()
+    '''*****************************************************************************'''
