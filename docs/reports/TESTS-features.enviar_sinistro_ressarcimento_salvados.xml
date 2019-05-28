@@ -1,0 +1,15 @@
+<testsuite errors="0" failures="0" hostname="jvictorrpw1001" name="features.enviar_sinistro_ressarcimento_salvados.Enviar Sinistro Ressarcimento Salvados" skipped="1" tests="1" time="0.0" timestamp="2019-05-28T16:11:40.428959"><testcase classname="features.enviar_sinistro_ressarcimento_salvados.Enviar Sinistro Ressarcimento Salvados" name="Realizar abertura de sinistro de ApÃ³lice - Ressarcimento" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP047
+  Scenario: Realizar abertura de sinistro de ApÃ³lice - Ressarcimento
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir o ParametrizaÃ§Ã£o de Envio Re21 ... skipped in 0.000s
+    And preencher os campos necessarios para a abertura de sinistro de apolice - ressarcimento ... skipped in 0.000s
+    Then a tela para abertura dos expedientes e exibida com sucesso ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

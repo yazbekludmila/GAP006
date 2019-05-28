@@ -1,4 +1,4 @@
-<testsuite errors="0" failures="0" hostname="gsilvanpw1001" name="features.enviar_sinistros_abertos.Enviar Sinistros Abertos" skipped="4" tests="4" time="0.0" timestamp="2019-05-28T11:19:45.021544"><testcase classname="features.enviar_sinistros_abertos.Enviar Sinistros Abertos" name="Realizar abertura de sinistro de apolice" status="skipped" time="0"><skipped /><system-out>
+<testsuite errors="0" failures="0" hostname="jvictorrpw1001" name="features.enviar_sinistros_abertos.Enviar Sinistros Abertos" skipped="4" tests="4" time="0.0" timestamp="2019-05-28T16:11:40.438312"><testcase classname="features.enviar_sinistros_abertos.Enviar Sinistros Abertos" name="Realizar abertura de sinistro de apolice" status="skipped" time="0"><skipped /><system-out>
 <![CDATA[
 @scenario.begin
 

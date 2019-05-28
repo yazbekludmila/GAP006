@@ -1,4 +1,4 @@
-<testsuite errors="0" failures="0" hostname="gsilvanpw1001" name="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" skipped="11" tests="12" time="25.659259" timestamp="2019-05-28T11:19:44.909056"><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Consultar parÃ¢metro de reasseguro" status="skipped" time="0"><skipped /><system-out>
+<testsuite errors="1" failures="0" hostname="jvictorrpw1001" name="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" skipped="11" tests="12" time="267.905733" timestamp="2019-05-28T16:11:40.355368"><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Consultar parÃ¢metro de reasseguro" status="skipped" time="0"><skipped /><system-out>
 <![CDATA[
 @scenario.begin
 
@@ -69,16 +69,33 @@
 @scenario.end
 --------------------------------------------------------------------------------
 ]]>
-</system-out></testcase><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Inclui parÃ¢metro de reasseguro" status="passed" time="25.659259"><system-out>
+</system-out></testcase><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Inclui parÃ¢metro de reasseguro" status="failed" time="267.905733"><error message="'NoneType' object has no attribute 'getCenter'" type="AttributeError">
+<![CDATA[
+Failing step: Given que usuario esta logado sistema com usuario valido ... failed in 267.906s
+Location: features/cadastra_parametro_resseguro.feature:5
+Traceback (most recent call last):
+  File "C:\Users\jvictorr\Desktop\projects\AutomacaoMapfre\env\lib\site-packages\Pyautomators\BDT\model.py", line 1329, in run
+    match.run(runner.context)
+  File "C:\Users\jvictorr\Desktop\projects\AutomacaoMapfre\env\lib\site-packages\Pyautomators\BDT\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "steps\login_steps.py", line 5, in step_impl
+    context.tronweb.validacao_tela(imagem=r'data\images\tron.PNG')
+  File "C:\Users\jvictorr\Desktop\projects\AutomacaoMapfre\TRONWEB\pages\pages\TronWebPage.py", line 45, in validacao_tela
+    if(self.app.verifica_tela(imagem, 80, similaridade=50) != None):
+  File "C:\Users\jvictorr\Desktop\projects\AutomacaoMapfre\env\lib\site-packages\Pyautomators\Verifica.py", line 96, in verifica_tela
+    result=result.getCenter()
+AttributeError: 'NoneType' object has no attribute 'getCenter'
+]]>
+</error><system-out>
 <![CDATA[
 @scenario.begin
 
   @CP009
   Scenario: Inclui parÃ¢metro de reasseguro
-    Given que usuario esta logado sistema com usuario valido ... passed in 6.550s
-    When abrir o Parametrizacao do Envio Re21 ... passed in 4.579s
-    And consulto parametros de reasseguro ... passed in 5.283s
-    Then incluo os parametros de reasseguro ... passed in 9.248s
+    Given que usuario esta logado sistema com usuario valido ... failed in 267.906s
+    When abrir o Parametrizacao do Envio Re21 ... skipped in 0.000s
+    And consulto parametros de reasseguro ... skipped in 0.000s
+    Then incluo os parametros de reasseguro ... skipped in 0.000s
 
 @scenario.end
 --------------------------------------------------------------------------------
