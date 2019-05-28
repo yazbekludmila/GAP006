@@ -1,8 +1,6 @@
-tronweb:
+Teste: 
     Tipo: Desktop
+    Name: TronWeb
     Saida: test.json
-    Name: tronweb1
-    Tags:
-        - consulta
-    Args:
-        user: 'manel'
+    Tags: 
+      - CP009

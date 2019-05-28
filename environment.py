@@ -13,12 +13,15 @@ from pages.pages.ConsultaParametroPage import ConsultaParametro
 from pages.pages.CadastroApolicesEnvioRe21Page import CadastroApolice
 from pages.pages.IncluiParametroPage import IncluiParametro
 from data.data import Data
+from Pyautomators.Documentacao import printarTela
 import os
 import getpass
 
 
 # Modulos extras
 from time import sleep
+def name_image(feature,scenario,step):
+	return str("{feature}-{scenario}-{step}.png".format(feature=feature,scenario=scenario,step=step)).replace('<',"").replace(">","").replace("'","").replace('"',"")
 
 def before_all(context):
 	pass
@@ -43,7 +46,7 @@ def before_step(context,step):
 	pass
 
 def after_step(context,step):
-	pass
+	context.print = printarTela(NomeArquivo="docs/image/{image}".format(image=name_image(context.feature.name,context.scenario.name,step.name)))
 
 def after_scenario(context,scenario):
 	context.app.fechar_programa()

@@ -1,0 +1,1673 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Background",
+      "location": "features/cadastra_parametro_resseguro.feature:4",
+      "name": "Login no sistema",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/cadastra_parametro_resseguro.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        }
+      ],
+      "type": "background"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/cadastra_parametro_resseguro.feature:8",
+      "name": "Consultar par\u00c3\u00a2metro de reasseguro",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/cadastra_parametro_resseguro.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/cadastra_parametro_resseguro.feature:9",
+          "name": "abrir o Parametrizacao do Envio Re21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/cadastra_parametro_resseguro.feature:10",
+          "name": "consulto parametros de reasseguro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/cadastra_parametro_resseguro.feature:11",
+          "name": "tela com os campos preenchidos da pesquisa e exibido",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP001"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/cadastra_parametro_resseguro.feature:14",
+      "name": "Consultar par\u00c3\u00a2metro de reasseguro preenchendo somente ramo",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/cadastra_parametro_resseguro.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/cadastra_parametro_resseguro.feature:15",
+          "name": "abrir o Parametrizacao do Envio Re21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/cadastra_parametro_resseguro.feature:16",
+          "name": "consulto parametros de reasseguro preenchendo somente ramo",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/cadastra_parametro_resseguro.feature:17",
+          "name": "mensagem de CAMPO OBRIGATORIO e exibido",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP002"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/cadastra_parametro_resseguro.feature:20",
+      "name": "Consultar par\u00c3\u00a2metro de reasseguro preenchendo somente produto",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/cadastra_parametro_resseguro.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/cadastra_parametro_resseguro.feature:21",
+          "name": "abrir o Parametrizacao do Envio Re21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/cadastra_parametro_resseguro.feature:22",
+          "name": "consulto parametros de reasseguro preenchendo somente produto",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/cadastra_parametro_resseguro.feature:23",
+          "name": "mensagem de CAMPO OBRIGATORIO e exibido",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP003"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/cadastra_parametro_resseguro.feature:26",
+      "name": "Consultar par\u00c3\u00a2metro de reasseguro sem preencher nenhum campo",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/cadastra_parametro_resseguro.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/cadastra_parametro_resseguro.feature:27",
+          "name": "abrir o Parametrizacao do Envio Re21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/cadastra_parametro_resseguro.feature:28",
+          "name": "consulto parametros de reasseguro sem preencher nenhum campo",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/cadastra_parametro_resseguro.feature:29",
+          "name": "mensagem de CAMPO OBRIGATORIO e exibido",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP004"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/cadastra_parametro_resseguro.feature:32",
+      "name": "Validar o hist\u00c3\u00b3rico dos registros alterados",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/cadastra_parametro_resseguro.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/cadastra_parametro_resseguro.feature:33",
+          "name": "abrir o Parametrizacao do Envio Re21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/cadastra_parametro_resseguro.feature:34",
+          "name": "preencher o campo de ramo com dados que foram alterados",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/cadastra_parametro_resseguro.feature:35",
+          "name": "preencher o campo de produto com dados que foram alterados",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/cadastra_parametro_resseguro.feature:36",
+          "name": "a pesquisa com os parametros alterados e retornada com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP008"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/cadastra_parametro_resseguro.feature:39",
+      "name": "Inclui par\u00c3\u00a2metro de reasseguro",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/cadastra_parametro_resseguro.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "steps/login_steps.py:1"
+          },
+          "name": "que usuario esta logado sistema com usuario valido",
+          "result": {
+            "duration": 6.550388336181641,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/cadastra_parametro_resseguro.feature:40",
+          "match": {
+            "arguments": [
+              {
+                "value": "Parametrizacao do Envio Re21"
+              }
+            ],
+            "location": "steps/login_steps.py:7"
+          },
+          "name": "abrir o Parametrizacao do Envio Re21",
+          "result": {
+            "duration": 4.578571557998657,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/cadastra_parametro_resseguro.feature:41",
+          "match": {
+            "arguments": [],
+            "location": "steps/consulta_parametro_reasseguro.py:1"
+          },
+          "name": "consulto parametros de reasseguro",
+          "result": {
+            "duration": 5.282557010650635,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/cadastra_parametro_resseguro.feature:42",
+          "match": {
+            "arguments": [],
+            "location": "steps/inclui_parametro_resseguro.py:5"
+          },
+          "name": "incluo os parametros de reasseguro",
+          "result": {
+            "duration": 9.247742414474487,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP009"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/cadastra_parametro_resseguro.feature:45",
+      "name": "Incluir par\u00c3\u00a2metros de resseguro invalidos enviar re21",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/cadastra_parametro_resseguro.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/cadastra_parametro_resseguro.feature:46",
+          "name": "abrir o Parametrizacao do Envio Re21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/cadastra_parametro_resseguro.feature:47",
+          "name": "consulto parametros de resseguro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/cadastra_parametro_resseguro.feature:48",
+          "name": "incluo os parametros de resseguro invalidos enviar re21",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP010"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/cadastra_parametro_resseguro.feature:51",
+      "name": "Incluir par\u00c3\u00a2metros de resseguro invalidos apolice",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/cadastra_parametro_resseguro.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/cadastra_parametro_resseguro.feature:52",
+          "name": "abrir o Parametrizacao do Envio Re21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/cadastra_parametro_resseguro.feature:53",
+          "name": "consulto parametros de resseguro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/cadastra_parametro_resseguro.feature:54",
+          "name": "incluo os parametros de resseguro invalidos apolice",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP011"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/cadastra_parametro_resseguro.feature:57",
+      "name": "Validar o hist\u00c3\u00b3rico dos registros excluidos",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/cadastra_parametro_resseguro.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/cadastra_parametro_resseguro.feature:58",
+          "name": "abrir o Parametrizacao do Envio Re21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/cadastra_parametro_resseguro.feature:59",
+          "name": "consultar os dados que foram excluidos",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/cadastra_parametro_resseguro.feature:60",
+          "name": "valida o historico de registro na tela de Parametrizacao de Envio",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP012"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/cadastra_parametro_resseguro.feature:63",
+      "name": "Excluir parametros de resseguro",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/cadastra_parametro_resseguro.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/cadastra_parametro_resseguro.feature:64",
+          "name": "abrir o Parametrizacao do Envio Re21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/cadastra_parametro_resseguro.feature:65",
+          "name": "preencher os dados para realizar a pesquisa e consultar",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/cadastra_parametro_resseguro.feature:66",
+          "name": "selecionar o campo que deseja excluir e clicar em Eliminar registro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/cadastra_parametro_resseguro.feature:67",
+          "name": "ao clicar em qualquer outro campo, a mensagem de Modificacoes Pendentes e exibida",
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/cadastra_parametro_resseguro.feature:68",
+          "name": "clicar em SIM",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/cadastra_parametro_resseguro.feature:69",
+          "name": "o registro foi excluido definitivamente",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP013"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/cadastra_parametro_resseguro.feature:72",
+      "name": "Incluir registro ja cadastrados validacao apolice",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/cadastra_parametro_resseguro.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/cadastra_parametro_resseguro.feature:73",
+          "name": "abrir o Parametrizacao do Envio Re21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/cadastra_parametro_resseguro.feature:74",
+          "name": "consulto parametros de resseguro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/cadastra_parametro_resseguro.feature:75",
+          "name": "incluo registros cadastrados na validacao da apolice",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP014"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/cadastra_parametro_resseguro.feature:78",
+      "name": "Incluir  registro ja cadastrado enviar re21",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/cadastra_parametro_resseguro.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/cadastra_parametro_resseguro.feature:79",
+          "name": "abrir o Parametrizacao do Envio Re21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/cadastra_parametro_resseguro.feature:80",
+          "name": "consulto parametros de resseguro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/cadastra_parametro_resseguro.feature:81",
+          "name": "incluo registros cadastrados na opcao enviar re21",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP015"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/cadastra_parametro_resseguro.feature:2",
+  "name": "Cadastrar par\u00c3\u00a2metros de resseguro para integra\u00c3\u00a7\u00c3\u00a3o com sistema RE21",
+  "status": "passed",
+  "tags": [
+    "CadastrarParametro"
+  ]
+},
+
+{
+  "elements": [
+    {
+      "keyword": "Background",
+      "location": "features/consultar_info_de_pagto_de_premio.feature:3",
+      "name": "Login do Sistema",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/consultar_info_de_pagto_de_premio.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        }
+      ],
+      "type": "background"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/consultar_info_de_pagto_de_premio.feature:1",
+  "name": "Consultar Informacoes de Pagamento de Premio",
+  "status": "skipped",
+  "tags": []
+},
+
+{
+  "elements": [
+    {
+      "keyword": "Background",
+      "location": "features/enviar_apolice_e_endosso_para_re21.feature:4",
+      "name": "Login do Sistema",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        }
+      ],
+      "type": "background"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_apolice_e_endosso_para_re21.feature:8",
+      "name": "Realizar emissao de apolice manualmente com parametro para envio ao RE21",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:9",
+          "name": "abrir o Emissao de Apolices e Endosso",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:10",
+          "name": "preencher os campos necessarios da tela Emissao de Apolices Endossos",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:11",
+          "name": "preencher os dados variaveis obrigatorios da Emissao de Apolices e Endossos",
+          "step_type": "when"
+        }
+      ],
+      "tags": [
+        "CP016"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_apolice_e_endosso_para_re21.feature:14",
+      "name": "Validar envio de Apolice ao RE21 conforme parametro",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:15",
+          "name": "abrir o Cadastro Apolices Envio RE21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:16",
+          "name": "pesquisar pelo numero da apolice",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:17",
+          "name": "o sistema exibe tela com resultado da consulta da apolice",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP017"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_apolice_e_endosso_para_re21.feature:20",
+      "name": "Realizar emissao de Endosso manualmente com parametro para envio ao RE21",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:21",
+          "name": "abrir o Emissao de Apolices e Endosso",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:22",
+          "name": "preencher os formularios necessarios para a emissao do endosso",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:23",
+          "name": "o endosso e emitido com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP018"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_apolice_e_endosso_para_re21.feature:26",
+      "name": "Validar envio de Endosso ao RE21 conforme parametro",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:27",
+          "name": "abrir o Cadastro Apolices Envio RE21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:28",
+          "name": "pesquisar pelo numero do endosso",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:29",
+          "name": "o sistema exibe tela com resultado da consulta do endosso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP019"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_apolice_e_endosso_para_re21.feature:32",
+      "name": "Realizar emissao de Apolice manualmente sem parametro",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:33",
+          "name": "abrir o Emissao de Apolices e Endosso",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:34",
+          "name": "preencher os formularios necessarios para emissao de apolice sem parametro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:35",
+          "name": "a apolice e gerada com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP020"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_apolice_e_endosso_para_re21.feature:38",
+      "name": "Validar o nao envio ao RE21 da Apolice sem parametro",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:39",
+          "name": "abrir o Cadastro Apolices Envio RE21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:40",
+          "name": "pesquisar pelo numero da apolice gerada sem parametro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:41",
+          "name": "o resultado da busca e exibida",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP021"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_apolice_e_endosso_para_re21.feature:44",
+      "name": "Realizar emissao de endosso manualmente sem parametro",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:45",
+          "name": "abrir o Emissao de Apolices e Endosso",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:46",
+          "name": "preencher os dados para a emissao de endosso sem parametro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:47",
+          "name": "a emissao e realizada com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP022"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_apolice_e_endosso_para_re21.feature:50",
+      "name": "Validar nao envio ao RE21 de Endosso sem parametro",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:51",
+          "name": "abrir o Cadastro Apolices Envio RE21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:52",
+          "name": "preencher os dados com o endosso gerado sem parametro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:53",
+          "name": "a validacao sobre o nao envio e exibida com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP023"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_apolice_e_endosso_para_re21.feature:56",
+      "name": "Validar o nao envio ao RE21 de endosso com data de emissao superior a parametrizada",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:57",
+          "name": "abrir o Cadastro Apolices Envio RE21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:58",
+          "name": "realizar busca do endosso com data de emissao superior a parametrizada",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:59",
+          "name": "a mensagem de erro e exibida com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP031"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_apolice_e_endosso_para_re21.feature:62",
+      "name": "Realizar emiss\u00c3\u00a3o de Apolice manual com parametro inabilitado",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:63",
+          "name": "abrir o Emissao de Apolices e Endosso",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:64",
+          "name": "preencher os formularios para a emissao da apolice",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:65",
+          "name": "realizar a aprovacao do controle Tecnico",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:66",
+          "name": "a emissao e realizada com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP032"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_apolice_e_endosso_para_re21.feature:69",
+      "name": "Validar o nao envio ao RE21 de apolice com parametro inabilitado",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:70",
+          "name": "abrir o Cadastro Apolices Envio RE21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:71",
+          "name": "preencher os dados para o envio de apolice",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:72",
+          "name": "a pesquisa retorna informacoes sobre os dados informados",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP033"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_apolice_e_endosso_para_re21.feature:75",
+      "name": "Realizar emissao de endosso manual com parametro inabilitado",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:76",
+          "name": "abrir o Emissao de Apolices e Endosso",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:77",
+          "name": "preencher os formularios necessarios para a emissao do endosso",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:78",
+          "name": "aprova o Controle Tecnico",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:79",
+          "name": "a emissao do endosso e concluido com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP034"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_apolice_e_endosso_para_re21.feature:82",
+      "name": "Validar nao envio ao RE21 de endosso como parametro inabilitado",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:5",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:83",
+          "name": "abrir o Cadastro Apolices Envio RE21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:84",
+          "name": "preencher os dados para o envio de endosso",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_apolice_e_endosso_para_re21.feature:85",
+          "name": "a pesquisa retorna informacoes sobre os dados informados",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP035"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/enviar_apolice_e_endosso_para_re21.feature:2",
+  "name": "Enviar Apolice e Endosso para RE21",
+  "status": "skipped",
+  "tags": [
+    "EnviarApoliceParaRE21"
+  ]
+},
+
+{
+  "elements": [
+    {
+      "keyword": "Background",
+      "location": "features/enviar_liquidacoes_de_sinistro.feature:3",
+      "name": "Login do Sistema",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        }
+      ],
+      "type": "background"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_liquidacoes_de_sinistro.feature:7",
+      "name": "Realizar liquidacao dos expedientes de sinistro de Endosso - Liquidacoes",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:8",
+          "name": "abrir o Liquidacao de Expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:9",
+          "name": "realizar busca pelo numero do sinistro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:10",
+          "name": "a tela de abertura de expedientes e exibida",
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:11",
+          "name": "realizar liquidacao dos expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:12",
+          "name": "a tela com expedientes abertos e exibida com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP060"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_liquidacoes_de_sinistro.feature:15",
+      "name": "Realizar abertura de sinistro de apolice - Pagamento",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:16",
+          "name": "abrir o Abertura de Sinistro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:17",
+          "name": "preencher os dados necessarios para a abertura de sinistro de apolice de Pagamento",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:18",
+          "name": "a tela exibindo os expedientes de sinistro de apolice de Pagamento",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP062"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_liquidacoes_de_sinistro.feature:21",
+      "name": "Realizar abertura dos expedientes de sinistro de Apolice - Pagamentos",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:22",
+          "name": "abrir o Abertura de Sinistro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:23",
+          "name": "realizar busca por sinistro para abertura de expediente de apolice - pagamentos",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:24",
+          "name": "a tela com os expedientes abertos e exibida com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP063"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_liquidacoes_de_sinistro.feature:27",
+      "name": "Realizar liquidacao dos expedientes de sinistro de apolice - Pagamentos",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:28",
+          "name": "abrir a Liquidacao de Expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:29",
+          "name": "realizar busca por sinistro para realizar a liquidacao dos expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:30",
+          "name": "a tela com os expedientes abertos e exibidos",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP064"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/enviar_liquidacoes_de_sinistro.feature:1",
+  "name": "Enviar Liquidacoes de Sinistro",
+  "status": "skipped",
+  "tags": []
+},
+
+{
+  "elements": [
+    {
+      "keyword": "Background",
+      "location": "features/enviar_pagamento_de_sinistro.feature:3",
+      "name": "Login do Sistema",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_pagamento_de_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        }
+      ],
+      "type": "background"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_pagamento_de_sinistro.feature:7",
+      "name": "Realizar abertura de sinistro de Endosso - Pagamento",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_pagamento_de_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_pagamento_de_sinistro.feature:8",
+          "name": "abrir o Abertura de Sinistros",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_pagamento_de_sinistro.feature:9",
+          "name": "preencher os dados para abertura de sinistro de endosso - pagamento",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_pagamento_de_sinistro.feature:10",
+          "name": "o sistema exibe tela com os expedientes do sinistro",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP067"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_pagamento_de_sinistro.feature:13",
+      "name": "Realizar abertura dos expedientes de sinistro de Endosso - Pagamentos",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_pagamento_de_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_pagamento_de_sinistro.feature:14",
+          "name": "abrir o Abertura de Expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_pagamento_de_sinistro.feature:15",
+          "name": "realizar busca pelo numero de sinistro de endosso - pagamento",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_pagamento_de_sinistro.feature:16",
+          "name": "o sistema exibe tela com expdientes abertos",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP068"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_pagamento_de_sinistro.feature:19",
+      "name": "Realizar liquida\u00c3\u00a7\u00c3\u00a3o dos expedientes de sinistro de Endosso - Pagamentos",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_pagamento_de_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_pagamento_de_sinistro.feature:20",
+          "name": "abrir o Liquidacao de Expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_pagamento_de_sinistro.feature:21",
+          "name": "realizar a busca pelo numero de sinistro de endosso - pagamento para Liquidacao",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_pagamento_de_sinistro.feature:22",
+          "name": "a tela com os expedientes abertos e exibida com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP069"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_pagamento_de_sinistro.feature:25",
+      "name": "Realizar abertura de sinistro de Apolice - Reservas",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_pagamento_de_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_pagamento_de_sinistro.feature:26",
+          "name": "abrir o Abertura de Sinistros",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_pagamento_de_sinistro.feature:27",
+          "name": "preencher os dados para a abertura de sinistro de apolice - reservas",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_pagamento_de_sinistro.feature:28",
+          "name": "o sistema exibe a tela com os expedientes do sinistro selecionado",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP072"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_pagamento_de_sinistro.feature:31",
+      "name": "Realizar abertura de sinistro de Endosso - Reservas",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_pagamento_de_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_pagamento_de_sinistro.feature:32",
+          "name": "abrir o Abertura de Sinistros",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_pagamento_de_sinistro.feature:33",
+          "name": "preencher os dados para a abertura de sinistro de endosso - reservas",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_pagamento_de_sinistro.feature:34",
+          "name": "o sistema exibe a tela com os expedientes do sinistro selecionado",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP075"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/enviar_pagamento_de_sinistro.feature:1",
+  "name": "Enviar pagamento de sinistro",
+  "status": "skipped",
+  "tags": []
+},
+
+{
+  "elements": [
+    {
+      "keyword": "Background",
+      "location": "features/enviar_sinistros_abertos.feature:3",
+      "name": "Login do Sistema",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_sinistros_abertos.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        }
+      ],
+      "type": "background"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_sinistros_abertos.feature:7",
+      "name": "Realizar abertura de sinistro de apolice",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_sinistros_abertos.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_sinistros_abertos.feature:8",
+          "name": "abrir o Abertura de Sinistros",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_sinistros_abertos.feature:9",
+          "name": "preencher os campos necessarios para a abertura dos sinistros de apolice",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_sinistros_abertos.feature:10",
+          "name": "a tela com os expedientes do sinistro de apolice e exibida com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP036"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_sinistros_abertos.feature:13",
+      "name": "Realizar abertura dos expedientes de sinistro de apolice",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_sinistros_abertos.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_sinistros_abertos.feature:14",
+          "name": "abrir o Abertura de Expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_sinistros_abertos.feature:15",
+          "name": "realizar a busca pelo numero do sinistro de apolice",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_sinistros_abertos.feature:16",
+          "name": "realizar abertura dos expedientes de apolice",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_sinistros_abertos.feature:17",
+          "name": "a tela de expedientes abertos de apolice e exibido com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP037"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_sinistros_abertos.feature:20",
+      "name": "Realizar abertura de sinistro de Endosso",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_sinistros_abertos.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_sinistros_abertos.feature:21",
+          "name": "abrir o Abertura de Sinistros",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_sinistros_abertos.feature:22",
+          "name": "preencher os campos necessarios para a abertura dos sinistros",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_sinistros_abertos.feature:23",
+          "name": "a tela com os expedientes do sinistro de endosso e exibida com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP039"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_sinistros_abertos.feature:26",
+      "name": "Realizar abertura dos expedientes de sinistro de endosso",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_sinistros_abertos.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_sinistros_abertos.feature:27",
+          "name": "abrir o Abertura de Expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_sinistros_abertos.feature:28",
+          "name": "realizar a busca pelo numero do sinistro de endosso",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_sinistros_abertos.feature:29",
+          "name": "realizar abertura dos expedientes de endosso",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_sinistros_abertos.feature:30",
+          "name": "a tela de expedientes abertos de endosso e exibido com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP040"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/enviar_sinistros_abertos.feature:1",
+  "name": "Enviar Sinistros Abertos",
+  "status": "skipped",
+  "tags": []
+},
+
+{
+  "elements": [
+    {
+      "keyword": "Background",
+      "location": "features/enviar_sinistros_fechados.feature:3",
+      "name": "Login do Sistema",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_sinistros_fechados.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        }
+      ],
+      "type": "background"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_sinistros_fechados.feature:7",
+      "name": "Realizar abertura de sinistro fechado de apolice",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_sinistros_fechados.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_sinistros_fechados.feature:8",
+          "name": "abrir o Abertura de Sinistros",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_sinistros_fechados.feature:9",
+          "name": "preencher os campos necessarios para a abertura do sinistro de apolice durante sinistro fechado",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_sinistros_fechados.feature:10",
+          "name": "a abertura do sinistro de apolice nao sera realizada",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP042"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/enviar_sinistros_fechados.feature:1",
+  "name": "Enviar sinistros fechados",
+  "status": "skipped",
+  "tags": []
+}
+]

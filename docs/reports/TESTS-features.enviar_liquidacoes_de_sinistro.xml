@@ -1,0 +1,59 @@
+<testsuite errors="0" failures="0" hostname="gsilvanpw1001" name="features.enviar_liquidacoes_de_sinistro.Enviar Liquidacoes de Sinistro" skipped="4" tests="4" time="0.0" timestamp="2019-05-28T11:19:44.988543"><testcase classname="features.enviar_liquidacoes_de_sinistro.Enviar Liquidacoes de Sinistro" name="Realizar liquidacao dos expedientes de sinistro de Endosso - Liquidacoes" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP060
+  Scenario: Realizar liquidacao dos expedientes de sinistro de Endosso - Liquidacoes
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir o Liquidacao de Expedientes ... skipped in 0.000s
+    And realizar busca pelo numero do sinistro ... skipped in 0.000s
+    Then a tela de abertura de expedientes e exibida ... skipped in 0.000s
+    When realizar liquidacao dos expedientes ... skipped in 0.000s
+    Then a tela com expedientes abertos e exibida com sucesso ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.enviar_liquidacoes_de_sinistro.Enviar Liquidacoes de Sinistro" name="Realizar abertura de sinistro de apolice - Pagamento" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP062
+  Scenario: Realizar abertura de sinistro de apolice - Pagamento
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir o Abertura de Sinistro ... skipped in 0.000s
+    And preencher os dados necessarios para a abertura de sinistro de apolice de Pagamento ... skipped in 0.000s
+    Then a tela exibindo os expedientes de sinistro de apolice de Pagamento ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.enviar_liquidacoes_de_sinistro.Enviar Liquidacoes de Sinistro" name="Realizar abertura dos expedientes de sinistro de Apolice - Pagamentos" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP063
+  Scenario: Realizar abertura dos expedientes de sinistro de Apolice - Pagamentos
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir o Abertura de Sinistro ... skipped in 0.000s
+    And realizar busca por sinistro para abertura de expediente de apolice - pagamentos ... skipped in 0.000s
+    Then a tela com os expedientes abertos e exibida com sucesso ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.enviar_liquidacoes_de_sinistro.Enviar Liquidacoes de Sinistro" name="Realizar liquidacao dos expedientes de sinistro de apolice - Pagamentos" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP064
+  Scenario: Realizar liquidacao dos expedientes de sinistro de apolice - Pagamentos
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir a Liquidacao de Expedientes ... skipped in 0.000s
+    And realizar busca por sinistro para realizar a liquidacao dos expedientes ... skipped in 0.000s
+    Then a tela com os expedientes abertos e exibidos ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

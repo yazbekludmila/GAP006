@@ -1,0 +1,173 @@
+<testsuite errors="0" failures="0" hostname="gsilvanpw1001" name="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" skipped="11" tests="12" time="25.659259" timestamp="2019-05-28T11:19:44.909056"><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Consultar parÃ¢metro de reasseguro" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP001
+  Scenario: Consultar parÃ¢metro de reasseguro
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir o Parametrizacao do Envio Re21 ... skipped in 0.000s
+    And consulto parametros de reasseguro ... skipped in 0.000s
+    Then tela com os campos preenchidos da pesquisa e exibido ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Consultar parÃ¢metro de reasseguro preenchendo somente ramo" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP002
+  Scenario: Consultar parÃ¢metro de reasseguro preenchendo somente ramo
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir o Parametrizacao do Envio Re21 ... skipped in 0.000s
+    And consulto parametros de reasseguro preenchendo somente ramo ... skipped in 0.000s
+    Then mensagem de CAMPO OBRIGATORIO e exibido ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Consultar parÃ¢metro de reasseguro preenchendo somente produto" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP003
+  Scenario: Consultar parÃ¢metro de reasseguro preenchendo somente produto
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir o Parametrizacao do Envio Re21 ... skipped in 0.000s
+    And consulto parametros de reasseguro preenchendo somente produto ... skipped in 0.000s
+    Then mensagem de CAMPO OBRIGATORIO e exibido ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Consultar parÃ¢metro de reasseguro sem preencher nenhum campo" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP004
+  Scenario: Consultar parÃ¢metro de reasseguro sem preencher nenhum campo
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir o Parametrizacao do Envio Re21 ... skipped in 0.000s
+    And consulto parametros de reasseguro sem preencher nenhum campo ... skipped in 0.000s
+    Then mensagem de CAMPO OBRIGATORIO e exibido ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Validar o histÃ³rico dos registros alterados" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP008
+  Scenario: Validar o histÃ³rico dos registros alterados
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir o Parametrizacao do Envio Re21 ... skipped in 0.000s
+    And preencher o campo de ramo com dados que foram alterados ... skipped in 0.000s
+    And preencher o campo de produto com dados que foram alterados ... skipped in 0.000s
+    Then a pesquisa com os parametros alterados e retornada com sucesso ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Inclui parÃ¢metro de reasseguro" status="passed" time="25.659259"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP009
+  Scenario: Inclui parÃ¢metro de reasseguro
+    Given que usuario esta logado sistema com usuario valido ... passed in 6.550s
+    When abrir o Parametrizacao do Envio Re21 ... passed in 4.579s
+    And consulto parametros de reasseguro ... passed in 5.283s
+    Then incluo os parametros de reasseguro ... passed in 9.248s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Incluir parÃ¢metros de resseguro invalidos enviar re21" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP010
+  Scenario: Incluir parÃ¢metros de resseguro invalidos enviar re21
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir o Parametrizacao do Envio Re21 ... skipped in 0.000s
+    And consulto parametros de resseguro ... skipped in 0.000s
+    Then incluo os parametros de resseguro invalidos enviar re21 ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Incluir parÃ¢metros de resseguro invalidos apolice" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP011
+  Scenario: Incluir parÃ¢metros de resseguro invalidos apolice
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir o Parametrizacao do Envio Re21 ... skipped in 0.000s
+    And consulto parametros de resseguro ... skipped in 0.000s
+    Then incluo os parametros de resseguro invalidos apolice ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Validar o histÃ³rico dos registros excluidos" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP012
+  Scenario: Validar o histÃ³rico dos registros excluidos
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir o Parametrizacao do Envio Re21 ... skipped in 0.000s
+    And consultar os dados que foram excluidos ... skipped in 0.000s
+    Then valida o historico de registro na tela de Parametrizacao de Envio ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Excluir parametros de resseguro" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP013
+  Scenario: Excluir parametros de resseguro
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir o Parametrizacao do Envio Re21 ... skipped in 0.000s
+    And preencher os dados para realizar a pesquisa e consultar ... skipped in 0.000s
+    And selecionar o campo que deseja excluir e clicar em Eliminar registro ... skipped in 0.000s
+    Then ao clicar em qualquer outro campo, a mensagem de Modificacoes Pendentes e exibida ... skipped in 0.000s
+    When clicar em SIM ... skipped in 0.000s
+    Then o registro foi excluido definitivamente ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Incluir registro ja cadastrados validacao apolice" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP014
+  Scenario: Incluir registro ja cadastrados validacao apolice
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir o Parametrizacao do Envio Re21 ... skipped in 0.000s
+    And consulto parametros de resseguro ... skipped in 0.000s
+    Then incluo registros cadastrados na validacao da apolice ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="features.cadastra_parametro_resseguro.Cadastrar parÃ¢metros de resseguro para integraÃ§Ã£o com sistema RE21" name="Incluir  registro ja cadastrado enviar re21" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @CP015
+  Scenario: Incluir  registro ja cadastrado enviar re21
+    Given que usuario esta logado sistema com usuario valido ... skipped in 0.000s
+    When abrir o Parametrizacao do Envio Re21 ... skipped in 0.000s
+    And consulto parametros de resseguro ... skipped in 0.000s
+    Then incluo registros cadastrados na opcao enviar re21 ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
