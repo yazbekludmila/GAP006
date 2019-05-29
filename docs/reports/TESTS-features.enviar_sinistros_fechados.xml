@@ -1,4 +1,4 @@
-<testsuite errors="0" failures="0" hostname="gsilvanpw1001" name="features.enviar_sinistros_fechados.Enviar sinistros fechados" skipped="1" tests="1" time="0.0" timestamp="2019-05-28T11:19:45.029046"><testcase classname="features.enviar_sinistros_fechados.Enviar sinistros fechados" name="Realizar abertura de sinistro fechado de apolice" status="skipped" time="0"><skipped /><system-out>
+<testsuite errors="0" failures="0" hostname="gsilvanpw1001" name="features.enviar_sinistros_fechados.Enviar sinistros fechados" skipped="1" tests="1" time="0.0" timestamp="2019-05-28T16:09:26.496193"><testcase classname="features.enviar_sinistros_fechados.Enviar sinistros fechados" name="Realizar abertura de sinistro fechado de apolice" status="skipped" time="0"><skipped /><system-out>
 <![CDATA[
 @scenario.begin
 

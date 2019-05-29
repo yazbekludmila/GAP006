@@ -1,4 +1,4 @@
-<testsuite errors="0" failures="0" hostname="gsilvanpw1001" name="features.enviar_liquidacoes_de_sinistro.Enviar Liquidacoes de Sinistro" skipped="4" tests="4" time="0.0" timestamp="2019-05-28T11:19:44.988543"><testcase classname="features.enviar_liquidacoes_de_sinistro.Enviar Liquidacoes de Sinistro" name="Realizar liquidacao dos expedientes de sinistro de Endosso - Liquidacoes" status="skipped" time="0"><skipped /><system-out>
+<testsuite errors="0" failures="0" hostname="gsilvanpw1001" name="features.enviar_liquidacoes_de_sinistro.Enviar Liquidacoes de Sinistro" skipped="4" tests="4" time="0.0" timestamp="2019-05-28T16:09:26.462189"><testcase classname="features.enviar_liquidacoes_de_sinistro.Enviar Liquidacoes de Sinistro" name="Realizar liquidacao dos expedientes de sinistro de Endosso - Liquidacoes" status="skipped" time="0"><skipped /><system-out>
 <![CDATA[
 @scenario.begin
 
