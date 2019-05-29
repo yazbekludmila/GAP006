@@ -30,10 +30,7 @@ def before_feature(context,feature):
 	pass
 
 def before_scenario(context,scenario):
-	if(getpass.getuser() == 'mconceicaos'):
-		context.app = Desk('/home/JMenuTron.bat',Driver_Winium='/home/Winium.Desktop.Driver.exe')
-	else:
-		context.app = Desk('C:\JTron_Homolog\JMenuTron.bat',Driver_Winium='driver\Winium.Desktop.Driver.exe')
+	context.app = Desk('C:\JTron_Homolog\JMenuTron.bat',Driver_Winium='driver\Winium.Desktop.Driver.exe')
 	# context.login = Login(context.app)
 	context.consulta_parametro = ConsultaParametro(context.app)
 #	context.menu = MenuPrincipal(context.app)

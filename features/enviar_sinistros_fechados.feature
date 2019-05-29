@@ -10,3 +10,10 @@ Feature: Enviar sinistros fechados
    Then a abertura do sinistro de apolice nao sera realizada
 
    
+   @CP045
+   Scenario: Realizar encerramento de sinistro de Endosso
+   When abrir o Encerramento de Expedientes
+   And preencher os campos necessarios para o encerramento do sinistro
+   Then sinistro e encerrado com sucesso
+
+   

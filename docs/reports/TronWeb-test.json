@@ -216,6 +216,7 @@
           },
           "name": "que usuario esta logado sistema com usuario valido",
           "result": {
+<<<<<<< HEAD
             "duration": 272.7833077907562,
             "error_message": [
               "Traceback (most recent call last):",
@@ -228,6 +229,20 @@
               "  File \"C:\\Users\\gsilvan\\Desktop\\Projects\\MapfreAutomation\\MAPFRE-TRONWEB\\pages\\pages\\TronWebPage.py\", line 45, in validacao_tela",
               "    if(self.app.verifica_tela(imagem, 80, similaridade=50) != None):",
               "  File \"C:\\Users\\gsilvan\\Desktop\\Projects\\MapfreAutomation\\env\\lib\\site-packages\\Pyautomators\\Verifica.py\", line 92, in verifica_tela",
+=======
+            "duration": 267.90573287010193,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\jvictorr\\Desktop\\projects\\AutomacaoMapfre\\env\\lib\\site-packages\\Pyautomators\\BDT\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\jvictorr\\Desktop\\projects\\AutomacaoMapfre\\env\\lib\\site-packages\\Pyautomators\\BDT\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"steps\\login_steps.py\", line 5, in step_impl",
+              "    context.tronweb.validacao_tela(imagem=r'data\\images\\tron.PNG')",
+              "  File \"C:\\Users\\jvictorr\\Desktop\\projects\\AutomacaoMapfre\\TRONWEB\\pages\\pages\\TronWebPage.py\", line 45, in validacao_tela",
+              "    if(self.app.verifica_tela(imagem, 80, similaridade=50) != None):",
+              "  File \"C:\\Users\\jvictorr\\Desktop\\projects\\AutomacaoMapfre\\env\\lib\\site-packages\\Pyautomators\\Verifica.py\", line 96, in verifica_tela",
+>>>>>>> dc2362a04af0ff6371607aafcb7b40d0b280b4dd
               "    result=result.getCenter()",
               "AttributeError: 'NoneType' object has no attribute 'getCenter'"
             ],
@@ -1421,6 +1436,66 @@
   "elements": [
     {
       "keyword": "Background",
+      "location": "features/enviar_sinistro_ressarcimento_salvados.feature:3",
+      "name": "Login do Sistema",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_sinistro_ressarcimento_salvados.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        }
+      ],
+      "type": "background"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_sinistro_ressarcimento_salvados.feature:7",
+      "name": "Realizar abertura de sinistro de Ap\u00c3\u00b3lice - Ressarcimento",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_sinistro_ressarcimento_salvados.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_sinistro_ressarcimento_salvados.feature:8",
+          "name": "abrir o Parametriza\u00c3\u00a7\u00c3\u00a3o de Envio Re21",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_sinistro_ressarcimento_salvados.feature:9",
+          "name": "preencher os campos necessarios para a abertura de sinistro de apolice - ressarcimento",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_sinistro_ressarcimento_salvados.feature:10",
+          "name": "a tela para abertura dos expedientes e exibida com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP047"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/enviar_sinistro_ressarcimento_salvados.feature:1",
+  "name": "Enviar Sinistro Ressarcimento Salvados",
+  "status": "skipped",
+  "tags": []
+},
+
+{
+  "elements": [
+    {
+      "keyword": "Background",
       "location": "features/enviar_sinistros_abertos.feature:3",
       "name": "Login do Sistema",
       "steps": [
@@ -1646,6 +1721,42 @@
       ],
       "tags": [
         "CP042"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_sinistros_fechados.feature:14",
+      "name": "Realizar encerramento de sinistro de Endosso",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_sinistros_fechados.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_sinistros_fechados.feature:15",
+          "name": "abrir o Encerramento de Expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_sinistros_fechados.feature:16",
+          "name": "preencher os campos necessarios para o encerramento do sinistro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_sinistros_fechados.feature:17",
+          "name": "sinistro e encerrado com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP045"
       ],
       "type": "scenario"
     }
