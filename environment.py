@@ -12,6 +12,7 @@ from pages.pages.TronWebPage import TronWeb
 from pages.pages.ConsultaParametroPage import ConsultaParametro
 from pages.pages.CadastroApolicesEnvioRe21Page import CadastroApolice
 from pages.pages.IncluiParametroPage import IncluiParametro
+from pages.pages.EmissaoDeApolicesEEndossoPage import EmissaoDeApolices
 from data.data import Data
 from Pyautomators.Documentacao import printarTela
 import os
@@ -38,6 +39,7 @@ def before_scenario(context,scenario):
 	context.inclui_parametro = IncluiParametro(context.app, context.tronweb)
 	context.dados = Data(context.app)
 	context.cadastro_apolice = CadastroApolice(context.app)
+	context.emissao = EmissaoDeApolices(context.app)
 
 def before_step(context,step):
 	pass

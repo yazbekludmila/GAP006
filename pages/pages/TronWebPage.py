@@ -1,6 +1,7 @@
 import getpass
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
+import time
 
 class TronWeb():
 
@@ -8,13 +9,14 @@ class TronWeb():
         self.app = app
 
     def realizar_login(self):
+        time.sleep(10)
         self.app.clica_imagem(r'data\images\senha.PNG', similar=70)
-        if(getpass.getuser() == 'gsilvan'):
+        '''if(getpass.getuser() == 'gsilvan'):
             self.app.escrever_direto('Mapfre2019')
         elif(getpass.getuser() == 'jvictorr'):
             self.app.escrever_direto('@indra2018bb')
         else:
-            print('Usuario não reconhecido.')
+            print('Usuario não reconhecido.')'''
         self.app.digitos('enter')
     
     def selecionar_menu_emissao(self,opcao):

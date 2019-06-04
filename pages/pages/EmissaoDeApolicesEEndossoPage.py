@@ -23,20 +23,24 @@ class EmissaoDeApolices():
         self.app.escrever_direto(contrato)
         self.app.digitos('tab')
     
-    def preencher_vigencia(self, vigencia):
-        self.app.clica_imagem(r'data\images\campo_vigencia.png',similar=80)
-        self.app.escrever_direto(vigencia)
+    def carregar_numero_de_cotacao(self):
+        self.app.clica_imagem(r'data\images\campo_numero_cotacao.png',similar=80)
         self.app.digitos('tab')
     
-    def preencher_vigencia_final(self, final):
-        self.app.clica_imagem(r'data\images\campo_vigencia_final.png',similar=80)
-        self.app.escrever_direto(final)
+    def preencher_vigencia(self, vigencia):
+        #self.app.clica_imagem(r'data\images\campo_vigencia.png',similar=80)
+        self.app.digitos('tab')
+        self.app.digitos('tab')
+        self.app.digitos('tab')
+        self.app.digitos('tab')
         self.app.digitos('tab')
     
     def clicar_botao_prosseguir(self):
         self.app.clica_imagem(r'data\images\botao_prosseguir.png',similar=80)
     
-    def preencher_tomador(self,tomador, cnpj):
+    def preencher_tomador(self,tomador,cnpj):
+        self.app.digitos('tab')
+        self.app.digitos('tab')
         self.app.clica_imagem(r'data\images\campo_tomador.png', similar=80)
         self.app.escrever_direto(tomador)
         self.app.digitos('tab')
@@ -66,7 +70,7 @@ class EmissaoDeApolices():
         self.app.digitos('tab')
         self.app.escrever_direto(cod_gestore)
     
-    def clicar_continuar_emissao(self)
+    def clicar_continuar_emissao(self):
         self.app.clica_imagem(r'', similar=80)
     
     def preencher_num_da_proposta(self,num):
