@@ -48,30 +48,36 @@ class EmissaoDeApolices():
         self.app.digitos('tab')
     
     def preencher_corret(self,corret):
-        self.app.clica_imagem(r'data\images\campo_corret.png', similar=80)
-        self.app.escrever_direto(corret)
         self.app.digitos('tab')
+        self.app.clica_imagem(r'data\images\campo_corretagem.png', similar=80)
+        self.app.escrever_direto(corret)
+        
     
     def preencher_quadro_de_comissoes(self,quadro,comercial):
-        self.app.clica_imagem(r'data\images\campo_corret.png', similar=80)
-        self.app.escrever_direto(corret)
+        #self.app.clica_imagem(r'data\images\campo_quadro_de_comissoes.png', similar=80)
+        print('HEEEEEEEEEEEEEEEEEEEEEEEEEEEEERE')
         self.app.digitos('tab')
-        self.app.escrever_direto(corret)
+        self.app.escrever_direto(quadro)
         self.app.digitos('tab')
+        self.app.escrever_direto(comercial)
+        self.app.digitos('tab')
+        self.app.clica_imagem(r'data\images\campo.png', similar=80)
+        self.app.clica_imagem(r'data\images\botao_aceitar.png', similar=80)
     
     def preencher_forma_de_pagto(self,pagto):
         self.app.clica_imagem(r'data\images\campo_forma_de_pagto.png', similar=80)
         self.app.escrever_direto(pagto)
+        self.app.digitos('tab')
         self.app.digitos('tab')
     
     def preencher_gestor_cobran(self,sigla_gestor, cod_gestor):
         self.app.clica_imagem(r'data\images\gestor_cobranca.png', similar=80)
         self.app.escrever_direto(sigla_gestor)
         self.app.digitos('tab')
-        self.app.escrever_direto(cod_gestore)
+        self.app.escrever_direto(cod_gestor)
     
     def clicar_continuar_emissao(self):
-        self.app.clica_imagem(r'', similar=80)
+        self.app.clica_imagem(r'data\images\botao_continua_emissao.png', similar=80)
     
     def preencher_num_da_proposta(self,num):
         self.app.digitos('tab')

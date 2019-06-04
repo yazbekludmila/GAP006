@@ -536,7 +536,7 @@
           },
           "name": "que usuario esta logado sistema com usuario valido",
           "result": {
-            "duration": 19.93599557876587,
+            "duration": 20.69936513900757,
             "status": "passed"
           },
           "step_type": "given"
@@ -554,7 +554,7 @@
           },
           "name": "abrir o Emissao de Apolices e Endosso",
           "result": {
-            "duration": 3.37813138961792,
+            "duration": 3.332934617996216,
             "status": "passed"
           },
           "step_type": "when"
@@ -564,11 +564,11 @@
           "location": "features/enviar_apolice_e_endosso_para_re21.feature:10",
           "match": {
             "arguments": [],
-            "location": "steps/enviar_apolice_e_endosso_para_re21_steps.py:30"
+            "location": "steps/enviar_apolice_e_endosso_para_re21_steps.py:31"
           },
           "name": "preencher os campos necessarios da tela Emissao de Apolices Endossos",
           "result": {
-            "duration": 15.958187580108643,
+            "duration": 28.134504795074463,
             "status": "passed"
           },
           "step_type": "when"
@@ -578,11 +578,11 @@
           "location": "features/enviar_apolice_e_endosso_para_re21.feature:11",
           "match": {
             "arguments": [],
-            "location": "steps/enviar_apolice_e_endosso_para_re21_steps.py:45"
+            "location": "steps/enviar_apolice_e_endosso_para_re21_steps.py:54"
           },
           "name": "preencher os dados variaveis obrigatorios da Emissao de Apolices e Endossos",
           "result": {
-            "duration": 0.000499725341796875,
+            "duration": 0.0009989738464355469,
             "status": "passed"
           },
           "step_type": "when"

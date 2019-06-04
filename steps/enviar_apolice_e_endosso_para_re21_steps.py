@@ -1,3 +1,4 @@
+import time
 
 #****************** Cenário - Validar nao envio ao RE21 de Endosso como parametro inabilitado ***************#    
 
@@ -40,6 +41,16 @@ def step_impl(context):
     context.tronweb.validacao_tela(imagem=r'data\images\moeda.png')
     context.emissao.preencher_tomador(tomador='CGC',cnpj='3699845000105')
     context.emissao.preencher_corret(corret='24644')
+    context.emissao.preencher_quadro_de_comissoes(quadro='12',comercial='1904')
+    context.emissao.preencher_forma_de_pagto(pagto='90')
+    context.emissao.preencher_gestor_cobran(sigla_gestor='BA',cod_gestor='00011912')
+    context.emissao.clicar_botao_prosseguir()
+    # Continuar com a emissao #
+    time.sleep(4)
+    context.tronweb.validacao_tela(imagem=r'data\images\botao_continua_emissao.png')
+    context.emissao.clicar_continuar_emissao()
+    # Tela de preenchimento de campos #
+    context.tronweb.validacao_tela(imagem=r'data\images\nome_do_campo.png')
 
 
 @when(u'preencher os dados variaveis obrigatorios da Emissao de Apolices e Endossos')
