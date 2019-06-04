@@ -237,8 +237,86 @@ class EmissaoDeApolices():
         self.app.clica_imagem(r'', similar=80)
         self.app.escrever_direto(protecionais)
         self.app.digitos('tab')
+    
+    def classe_resseguro(self, classe)
+        self.app.clica_imagem(r'data\images\classe_resseguro.png', similar=80)
+        self.app.escrever_direto(classe)
+        self.app.digitos('tab')
 
+    def codigo_corretor_veracruz(self, codigo)
+        self.app.clica_imagem(r'data\images\codigo_corretor_veracruz.png', similar=80)
+        self.app.escrever_direto(classe)
+        self.app.digitos('tab')
+    
+    def comissao(self, comissao)
+        self.app.clica_imagem(r'data\images\comissao.png', similar=80)
+        self.app.escrever_direto(classe)
+        self.app.digitos('tab')
 
+    def data_proposta(self, proposta)
+        self.app.clica_imagem(r'data\images\data_proposta.png', similar=80)
+        self.app.escrever_direto(proposta)
+        self.app.digitos('tab')
+
+    def dia_vencimento_parcela(self, data)
+        self.app.clica_imagem(r'data\images\dia_vencimento_parcela.png', similar=80)
+        self.app.escrever_direto(data)
+        self.app.digitos('tab')
+
+    def numero_proposta(self, numero)
+        self.app.clica_imagem(r'data\images\numero_proposta.png', similar=80)
+        self.app.escrever_direto(numero)
+        self.app.digitos('tab')
+
+    def percentual_de_dmp(self, percentual_de_dmp)
+        self.app.clica_imagem(r'data\images\percentual_de_dmp.png', similar=80)
+        self.app.escrever_direto(percentual_de_dmp)
+        self.app.digitos('tab')
+
+    def percentual_de_pmp(self, percentual_de_pmp)
+        self.app.clica_imagem(r'data\images\percentual_de_pmp.png', similar=80)
+        self.app.escrever_direto(percentual_de_pmp)
+        self.app.digitos('tab')
+
+    def pontuacao(self, pontuacao)
+        self.app.clica_imagem(r'data\images\pontuacao.png', similar=80)
+        self.app.escrever_direto(pontuacao)
+        self.app.digitos('tab')
+
+    def premio_total(self, premio)
+        self.app.clica_imagem(r'data\images\premio_total.png', similar=80)
+        self.app.escrever_direto(premio)
+        self.app.digitos('tab')
+
+    def texto_para_descricao(self, texto)
+        self.app.clica_imagem(r'data\images\texto_para_descricao.png', similar=80)
+        self.app.escrever_direto(texto)
+        self.app.digitos('tab')
+
+    def tipo_de_contratacao(self, tipo)
+        self.app.clica_imagem(r'data\images\tipo_de_contratacao.png', similar=80)
+        self.app.escrever_direto(tipo)
+        self.app.digitos('tab')
+
+    def tipo_de_risco(self, tipo)
+        self.app.clica_imagem(r'data\images\tipo_de_risco.png', similar=80)
+        self.app.escrever_direto(tipo)
+        self.app.digitos('tab')
+
+    def tipo_de_seguro(self, tipo)
+        self.app.clica_imagem(r'data\images\tipo_de_seguro.png', similar=80)
+        self.app.escrever_direto(tipo)
+        self.app.digitos('tab')
+
+    def valor_em_risco(self, valor)
+        self.app.clica_imagem(r'data\images\valor_em_risco.png', similar=80)
+        self.app.escrever_direto(valor)
+        self.app.digitos('tab')
+
+    def vr_cessantes(self, vr_cessantes)
+        self.app.clica_imagem(r'data\images\vr_cessantes.png', similar=80)
+        self.app.escrever_direto(vr_cessantes)
+        self.app.digitos('tab')
     
 
 
