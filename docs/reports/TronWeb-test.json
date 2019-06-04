@@ -216,33 +216,18 @@
           },
           "name": "que usuario esta logado sistema com usuario valido",
           "result": {
-<<<<<<< HEAD
-            "duration": 272.7833077907562,
+            "duration": 291.71986413002014,
             "error_message": [
               "Traceback (most recent call last):",
               "  File \"C:\\Users\\gsilvan\\Desktop\\Projects\\MapfreAutomation\\env\\lib\\site-packages\\Pyautomators\\BDT\\model.py\", line 1329, in run",
               "    match.run(runner.context)",
               "  File \"C:\\Users\\gsilvan\\Desktop\\Projects\\MapfreAutomation\\env\\lib\\site-packages\\Pyautomators\\BDT\\matchers.py\", line 98, in run",
               "    self.func(context, *args, **kwargs)",
-              "  File \"steps\\login_steps.py\", line 3, in step_impl",
-              "    context.tronweb.validacao_tela(imagem=r\"data\\images\\senha.png\")",
+              "  File \"steps\\login_steps.py\", line 5, in step_impl",
+              "    context.tronweb.validacao_tela(imagem=r'data\\images\\tron.PNG')",
               "  File \"C:\\Users\\gsilvan\\Desktop\\Projects\\MapfreAutomation\\MAPFRE-TRONWEB\\pages\\pages\\TronWebPage.py\", line 45, in validacao_tela",
               "    if(self.app.verifica_tela(imagem, 80, similaridade=50) != None):",
               "  File \"C:\\Users\\gsilvan\\Desktop\\Projects\\MapfreAutomation\\env\\lib\\site-packages\\Pyautomators\\Verifica.py\", line 92, in verifica_tela",
-=======
-            "duration": 267.90573287010193,
-            "error_message": [
-              "Traceback (most recent call last):",
-              "  File \"C:\\Users\\jvictorr\\Desktop\\projects\\AutomacaoMapfre\\env\\lib\\site-packages\\Pyautomators\\BDT\\model.py\", line 1329, in run",
-              "    match.run(runner.context)",
-              "  File \"C:\\Users\\jvictorr\\Desktop\\projects\\AutomacaoMapfre\\env\\lib\\site-packages\\Pyautomators\\BDT\\matchers.py\", line 98, in run",
-              "    self.func(context, *args, **kwargs)",
-              "  File \"steps\\login_steps.py\", line 5, in step_impl",
-              "    context.tronweb.validacao_tela(imagem=r'data\\images\\tron.PNG')",
-              "  File \"C:\\Users\\jvictorr\\Desktop\\projects\\AutomacaoMapfre\\TRONWEB\\pages\\pages\\TronWebPage.py\", line 45, in validacao_tela",
-              "    if(self.app.verifica_tela(imagem, 80, similaridade=50) != None):",
-              "  File \"C:\\Users\\jvictorr\\Desktop\\projects\\AutomacaoMapfre\\env\\lib\\site-packages\\Pyautomators\\Verifica.py\", line 96, in verifica_tela",
->>>>>>> dc2362a04af0ff6371607aafcb7b40d0b280b4dd
               "    result=result.getCenter()",
               "AttributeError: 'NoneType' object has no attribute 'getCenter'"
             ],
@@ -1219,6 +1204,114 @@
         "CP064"
       ],
       "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_liquidacoes_de_sinistro.feature:33",
+      "name": "Realizar abertura dos expedientes de sinistro de Endosso - Liquida\u00c3\u00a7\u00c3\u00b5es",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:34",
+          "name": "abrir o Abertura de Expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:35",
+          "name": "realiza busca pelo numero do sinistro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:36",
+          "name": "a tela com expedientes de sinistro de endosso liquidacoes e exibida",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP055"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_liquidacoes_de_sinistro.feature:39",
+      "name": "Realizar liquida\u00c3\u00a7\u00c3\u00a3o dos expedientes de sinistro de Ap\u00c3\u00b3lice - Liquida\u00c3\u00a7\u00c3\u00b5es",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:40",
+          "name": "abrir o Liquidacao de Expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:41",
+          "name": "realiza busca pelo numero do sinistro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:42",
+          "name": "a tela com expedientes de sinistro de apolice liquidacoes e exibida",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP056"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_liquidacoes_de_sinistro.feature:45",
+      "name": "Realizar abertura de sinistro de Endosso - Liquida\u00c3\u00a7\u00c3\u00b5es",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:46",
+          "name": "abrir o Abertura de Sinistros",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:47",
+          "name": "preencha os campos necessarios para abertura de sinistros de endosso liquidacoes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_liquidacoes_de_sinistro.feature:48",
+          "name": "a tela com expedientes do sinistro e exibida com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP058"
+      ],
+      "type": "scenario"
     }
   ],
   "keyword": "Feature",
@@ -1436,12 +1529,12 @@
   "elements": [
     {
       "keyword": "Background",
-      "location": "features/enviar_sinistro_ressarcimento_salvados.feature:3",
+      "location": "features/enviar_ressarcimento_sinistro.feature:3",
       "name": "Login do Sistema",
       "steps": [
         {
           "keyword": "Given",
-          "location": "features/enviar_sinistro_ressarcimento_salvados.feature:4",
+          "location": "features/enviar_ressarcimento_sinistro.feature:4",
           "name": "que usuario esta logado sistema com usuario valido",
           "step_type": "given"
         }
@@ -1450,31 +1543,31 @@
     },
     {
       "keyword": "Scenario",
-      "location": "features/enviar_sinistro_ressarcimento_salvados.feature:7",
+      "location": "features/enviar_ressarcimento_sinistro.feature:7",
       "name": "Realizar abertura de sinistro de Ap\u00c3\u00b3lice - Ressarcimento",
       "status": "skipped",
       "steps": [
         {
           "keyword": "Given",
-          "location": "features/enviar_sinistro_ressarcimento_salvados.feature:4",
+          "location": "features/enviar_ressarcimento_sinistro.feature:4",
           "name": "que usuario esta logado sistema com usuario valido",
           "step_type": "given"
         },
         {
           "keyword": "When",
-          "location": "features/enviar_sinistro_ressarcimento_salvados.feature:8",
+          "location": "features/enviar_ressarcimento_sinistro.feature:8",
           "name": "abrir o Parametriza\u00c3\u00a7\u00c3\u00a3o de Envio Re21",
           "step_type": "when"
         },
         {
           "keyword": "And",
-          "location": "features/enviar_sinistro_ressarcimento_salvados.feature:9",
+          "location": "features/enviar_ressarcimento_sinistro.feature:9",
           "name": "preencher os campos necessarios para a abertura de sinistro de apolice - ressarcimento",
           "step_type": "when"
         },
         {
           "keyword": "Then",
-          "location": "features/enviar_sinistro_ressarcimento_salvados.feature:10",
+          "location": "features/enviar_ressarcimento_sinistro.feature:10",
           "name": "a tela para abertura dos expedientes e exibida com sucesso",
           "step_type": "then"
         }
@@ -1483,11 +1576,214 @@
         "CP047"
       ],
       "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_ressarcimento_sinistro.feature:13",
+      "name": "Realizar abertura dos expedientes de sinistro de Ap\u00c3\u00b3lice - Ressarcimento",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_ressarcimento_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_ressarcimento_sinistro.feature:14",
+          "name": "abrir o Abertura de Expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_ressarcimento_sinistro.feature:15",
+          "name": "preencher os campos necessarios para a abertura dos expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_ressarcimento_sinistro.feature:16",
+          "name": "a tela com expedientes abertos e exibida com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP048"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_ressarcimento_sinistro.feature:19",
+      "name": "Realizar liquida\u00c3\u00a7\u00c3\u00a3o dos expedientes de sinistro de Ap\u00c3\u00b3lice - Ressarcimento",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_ressarcimento_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_ressarcimento_sinistro.feature:20",
+          "name": "abrir o Liquida\u00c3\u00a7\u00c3\u00a3o de Expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_ressarcimento_sinistro.feature:21",
+          "name": "realiza busca pelo numero do sinistro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_ressarcimento_sinistro.feature:22",
+          "name": "a tela de liquidacao com expedientes abertos e exibida com sucesso",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP049"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_ressarcimento_sinistro.feature:25",
+      "name": "Realizar abertura de sinistro de Endosso - Ressarcimento",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_ressarcimento_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_ressarcimento_sinistro.feature:26",
+          "name": "abrir o Abertura de Sinistros",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_ressarcimento_sinistro.feature:27",
+          "name": "preencho os campos necessarios para abertura de sinistro de endosso - ressarcimento",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_ressarcimento_sinistro.feature:28",
+          "name": "a tela com expedientes do sinistro e exibida",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP051"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_ressarcimento_sinistro.feature:31",
+      "name": "Realizar abertura dos expedientes de sinistro de Endosso - Ressarcimento",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_ressarcimento_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_ressarcimento_sinistro.feature:32",
+          "name": "abrir o Abertura de Expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_ressarcimento_sinistro.feature:33",
+          "name": "realiza busca pelo numero do sinistro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_ressarcimento_sinistro.feature:34",
+          "name": "a tela com expedientes abertos e exibida",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP052"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/enviar_ressarcimento_sinistro.feature:38",
+      "name": "Realizar liquida\u00c3\u00a7\u00c3\u00a3o dos expedientes de sinistro de Endosso - Ressarcimento",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_ressarcimento_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/enviar_ressarcimento_sinistro.feature:39",
+          "name": "abrir o Liquida\u00c3\u00a7\u00c3\u00a3o de Expedientes",
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/enviar_ressarcimento_sinistro.feature:40",
+          "name": "realiza busca pelo numero do sinistro",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/enviar_ressarcimento_sinistro.feature:41",
+          "name": "a tela com expedientes abertos liquidada e exibida",
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "CP053"
+      ],
+      "type": "scenario"
+    },
+    {
+      "description": [
+        "When",
+        "And",
+        "Then"
+      ],
+      "keyword": "Scenario",
+      "location": "features/enviar_ressarcimento_sinistro.feature:45",
+      "name": "Validar envio de dados de ressarcimento de sinistros de Endosso ao RE21",
+      "status": "skipped",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/enviar_ressarcimento_sinistro.feature:4",
+          "name": "que usuario esta logado sistema com usuario valido",
+          "step_type": "given"
+        }
+      ],
+      "tags": [
+        "CP054"
+      ],
+      "type": "scenario"
     }
   ],
   "keyword": "Feature",
-  "location": "features/enviar_sinistro_ressarcimento_salvados.feature:1",
-  "name": "Enviar Sinistro Ressarcimento Salvados",
+  "location": "features/enviar_ressarcimento_sinistro.feature:1",
+  "name": "Enviar ressarcimento de sinistro",
   "status": "skipped",
   "tags": []
 },

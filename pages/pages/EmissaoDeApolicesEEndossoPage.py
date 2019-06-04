@@ -36,31 +36,45 @@ class EmissaoDeApolices():
     def clicar_botao_prosseguir(self):
         self.app.clica_imagem(r'data\images\botao_prosseguir.png',similar=80)
     
-    def preencher_tomador(self,tomador):
-        self.app.clica_imagem(r'', similar=80)
+    def preencher_tomador(self,tomador, cnpj):
+        self.app.clica_imagem(r'data\images\campo_tomador.png', similar=80)
         self.app.escrever_direto(tomador)
         self.app.digitos('tab')
+        self.app.escrever_direto(cnpj)
+        self.app.digitos('tab')
     
-    def preencher_quadro_de_distribuicao(self,quadro):
-        self.app.clica_imagem(r'', similar=80)
-        self.app.escrever_direto(quadro)
+    def preencher_corret(self,corret):
+        self.app.clica_imagem(r'data\images\campo_corret.png', similar=80)
+        self.app.escrever_direto(corret)
+        self.app.digitos('tab')
+    
+    def preencher_quadro_de_comissoes(self,quadro,comercial):
+        self.app.clica_imagem(r'data\images\campo_corret.png', similar=80)
+        self.app.escrever_direto(corret)
+        self.app.digitos('tab')
+        self.app.escrever_direto(corret)
         self.app.digitos('tab')
     
     def preencher_forma_de_pagto(self,pagto):
-        self.app.clica_imagem(r'', similar=80)
+        self.app.clica_imagem(r'data\images\campo_forma_de_pagto.png', similar=80)
         self.app.escrever_direto(pagto)
         self.app.digitos('tab')
     
-    def preencher_gestor_cobran(self,gestor):
-        self.app.clica_imagem(r'', similar=80)
-        self.app.escrever_direto(gestor)
+    def preencher_gestor_cobran(self,sigla_gestor, cod_gestor):
+        self.app.clica_imagem(r'data\images\gestor_cobranca.png', similar=80)
+        self.app.escrever_direto(sigla_gestor)
         self.app.digitos('tab')
+        self.app.escrever_direto(cod_gestore)
     
     def clicar_continuar_emissao(self)
         self.app.clica_imagem(r'', similar=80)
     
     def preencher_num_da_proposta(self,num):
-        self.app.clica_imagem(r'', similar=80)
+        self.app.digitos('tab')
+        self.app.digitos('tab')
+        self.app.digitos('tab')
+        self.app.clica_imagem(r'data\images\mensagem_campo_obrigatorio.png', similar=80)
+        self.app.clica_imagem(r'data\images\campo_numero_da_proposta .png', similar=80)
         self.app.escrever_direto(num)
         self.app.digitos('tab')
     
@@ -104,6 +118,117 @@ class EmissaoDeApolices():
         self.app.escrever_direto(valor)
         self.app.digitos('tab')
     
+    def preencher_tipo_de_contratacao(self,tipo):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(tipo)
+        self.app.digitos('tab')
+    
+    def preencher_grupo(self,grupo):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(grupo)
+        self.app.digitos('tab')
+    
+    def preencher_tipo_de_risco(self,tipo):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(tipo)
+        self.app.digitos('tab')
+    
+    def preencher_tipo_de_segmento(self,tipo):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(tipo)
+        self.app.digitos('tab')
+    
+    def preencher_pontuacao(self,pontuacao):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(pontuacao)
+        self.app.digitos('tab')
+    
+    def preencher_valor_em_risco_dm(self,valor):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(valor)
+        self.app.digitos('tab')
+    
+    def preencher_percentual_de_dmp(self,percentual):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(percentual)
+        self.app.digitos('tab')
+    
+    def preencher_percentual_de_pmp(self,percentual):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(percentual)
+        self.app.digitos('tab')
+    
+    def preencher_classe_de_resseguro(self,classe):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(classe)
+        self.app.digitos('tab')
+    
+    def preencher_vr_l_cessantes(self,valor):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(valor)
+        self.app.digitos('tab')
+    
+    def preencher_tipo_de_seguro(self,seguro):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(seguro)
+        self.app.digitos('tab')
+    
+    def preencher_risco_facultativo(self,risco):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(risco)
+        self.app.digitos('tab')
+    
+    def preencher_cod_da_construcao(self,cod):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(cod)
+        self.app.digitos('tab')
+    
+    def preencher_tipo_qualidade_da_construcao(self,tipo):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(tipo)
+        self.app.digitos('tab')
+    
+    def preencher_protencionais(self,protencionais):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(protencionais)
+        self.app.digitos('tab')
+    
+    def preencher_qualidade_do_risco(self,qualidade):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(qualidade)
+        self.app.digitos('tab')
+    
+    def preencher_periodo_em_anos(self,anos):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(anos)
+        self.app.digitos('tab')
+    
+    def preencher_percentual_de_sinistralidade(self,percentual):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(percentual)
+        self.app.digitos('tab')
+
+    def preencher_desc_agrav_tecnico(self,desc):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(desc)
+        self.app.digitos('tab')
+    
+    def preencher_total_de_coberturas_para_calculo(self,total):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(total)
+        self.app.digitos('tab')
+    
+    def preencher_seguro_ajustavel(self,seguro):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(valor)
+        self.app.digitos('tab')
+    
+    def preencher_protecionais_roubo(self,protecionais):
+        self.app.clica_imagem(r'', similar=80)
+        self.app.escrever_direto(protecionais)
+        self.app.digitos('tab')
+
+
     
 
 
