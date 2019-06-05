@@ -9,8 +9,14 @@ class TronWeb():
         self.app = app
 
     def realizar_login(self):
-        time.sleep(10)
+        self.app.clica_imagem(r'data\images\botao_ok.PNG', similar=70)
+        time.sleep(2)
+        self.app.digitos('enter')
+        time.sleep(2)
+        self.app.escrever_direto('ARROSILV')
+        self.app.digitos('tab')
         self.app.clica_imagem(r'data\images\senha.PNG', similar=70)
+        self.app.escrever_direto('mapfre2019')
         '''if(getpass.getuser() == 'gsilvan'):
             self.app.escrever_direto('Mapfre2019')
         elif(getpass.getuser() == 'jvictorr'):
@@ -42,7 +48,7 @@ class TronWeb():
             self.app.clica_imagem(r'data\images\parametrizacao_envio.png',similar=70, cliques=2)
 
     def validacao_tela(self,imagem):
-        tentativas = 50
+        tentativas = 100
         for tentativa in range(tentativas):
             if(self.app.verifica_tela(imagem, 80, similaridade=50) != None):
                 break

@@ -9,6 +9,7 @@ Feature: Enviar Apolice e Endosso para RE21
     When abrir o Emissao de Apolices e Endosso
     And preencher os campos necessarios da tela Emissao de Apolices Endossos
     And preencher os dados variaveis obrigatorios da Emissao de Apolices e Endossos
+    Then a emissao de apolice e realizada com sucesso
 
     @CP017
     Scenario: Validar envio de Apolice ao RE21 conforme parametro

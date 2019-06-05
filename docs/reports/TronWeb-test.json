@@ -525,7 +525,7 @@
       "keyword": "Scenario",
       "location": "features/enviar_apolice_e_endosso_para_re21.feature:8",
       "name": "Realizar emissao de apolice manualmente com parametro para envio ao RE21",
-      "status": "passed",
+      "status": "failed",
       "steps": [
         {
           "keyword": "Given",
@@ -536,7 +536,7 @@
           },
           "name": "que usuario esta logado sistema com usuario valido",
           "result": {
-            "duration": 20.69936513900757,
+            "duration": 20.38087821006775,
             "status": "passed"
           },
           "step_type": "given"
@@ -554,7 +554,7 @@
           },
           "name": "abrir o Emissao de Apolices e Endosso",
           "result": {
-            "duration": 3.332934617996216,
+            "duration": 3.478208541870117,
             "status": "passed"
           },
           "step_type": "when"
@@ -568,7 +568,7 @@
           },
           "name": "preencher os campos necessarios da tela Emissao de Apolices Endossos",
           "result": {
-            "duration": 28.134504795074463,
+            "duration": 28.91476035118103,
             "status": "passed"
           },
           "step_type": "when"
@@ -578,12 +578,24 @@
           "location": "features/enviar_apolice_e_endosso_para_re21.feature:11",
           "match": {
             "arguments": [],
-            "location": "steps/enviar_apolice_e_endosso_para_re21_steps.py:54"
+            "location": "steps/enviar_apolice_e_endosso_para_re21_steps.py:56"
           },
           "name": "preencher os dados variaveis obrigatorios da Emissao de Apolices e Endossos",
           "result": {
-            "duration": 0.0009989738464355469,
-            "status": "passed"
+            "duration": 6.760012149810791,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Users\\gsilvan\\Desktop\\Projects\\MapfreAutomation\\env\\lib\\site-packages\\Pyautomators\\BDT\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Users\\gsilvan\\Desktop\\Projects\\MapfreAutomation\\env\\lib\\site-packages\\Pyautomators\\BDT\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"steps\\enviar_apolice_e_endosso_para_re21_steps.py\", line 60, in step_impl",
+              "    context.emissao.preencher_num_da_proposta(num='9987888')",
+              "  File \"C:\\Users\\gsilvan\\Desktop\\Projects\\MapfreAutomation\\MAPFRE-TRONWEB\\pages\\pages\\EmissaoDeApolicesEEndossoPage.py\", line 87, in preencher_num_da_proposta",
+              "    tw.validacao_tela(r'data\\images\\campo_numero_da_proposta.png')",
+              "TypeError: validacao_tela() missing 1 required positional argument: 'imagem'"
+            ],
+            "status": "failed"
           },
           "step_type": "when"
         }
@@ -1041,7 +1053,7 @@
   "keyword": "Feature",
   "location": "features/enviar_apolice_e_endosso_para_re21.feature:2",
   "name": "Enviar Apolice e Endosso para RE21",
-  "status": "passed",
+  "status": "failed",
   "tags": [
     "EnviarApoliceParaRE21"
   ]

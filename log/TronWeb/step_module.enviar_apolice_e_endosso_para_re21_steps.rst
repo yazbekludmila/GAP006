@@ -22,6 +22,7 @@ When aprova o Controle Tecnico                                                  
 Then a emissao do endosso e concluido com sucesso                                             x      
 When preencher os campos necessarios da tela Emissao de Apolices Endossos                x           
 When preencher os dados variaveis obrigatorios da Emissao de Apolices e Endossos         x           
+Then a emissao de apolice e realizada com sucesso                                             x      
 ================================================================================ ===== ==== ==== ====
 
 Step Definitions
@@ -86,6 +87,15 @@ Step Definitions
 
 **Step:** When preencher os dados variaveis obrigatorios da Emissao de Apolices e Endossos
 ------------------------------------------------------------------------------------------
+
+.. todo::
+    Step definition description is missing.
+
+.. index:: 
+    single: Then step; Then a emissao de apolice e realizada com sucesso
+
+**Step:** Then a emissao de apolice e realizada com sucesso
+-----------------------------------------------------------
 
 .. todo::
     Step definition description is missing.

@@ -31,6 +31,7 @@ def step_impl(context):
 @when(u'preencher os campos necessarios da tela Emissao de Apolices Endossos')
 def step_impl(context):
     # Tela inicial emissão Apolices e Endossos #
+    context.tronweb.validacao_tela(imagem=r'data\images\campo_prod.png')
     context.emissao.preencher_campo_prod(prod='117')
     context.emissao.preencher_tipo_de_emissao(emissao='R')
     context.emissao.preencher_canal(canal='99')
@@ -49,10 +50,21 @@ def step_impl(context):
     time.sleep(4)
     context.tronweb.validacao_tela(imagem=r'data\images\botao_continua_emissao.png')
     context.emissao.clicar_continuar_emissao()
-    # Tela de preenchimento de campos #
-    context.tronweb.validacao_tela(imagem=r'data\images\nome_do_campo.png')
 
 
 @when(u'preencher os dados variaveis obrigatorios da Emissao de Apolices e Endossos')
 def step_impl(context):
+    # Tela de preenchimento de campos #
+    context.tronweb.validacao_tela(imagem=r'data\images\nome_do_campo.png')
+    context.emissao.preencher_num_da_proposta()
+    context.emissao.data_proposta(proposta=context.tronweb.get_data_atual())
+    context.emissao.dia_vencimento_parcela(data='99')
+    context.emissao.codigo_corretor_veracruz(codigo='24644')
+    context.emissao.comissao(comissao='0')
+    context.emissao.premio_total(premio='1000')
+    context.emissao.clicar_continuar_emissao()
+
+@then(u'a emissao de apolice e realizada com sucesso')
+def step_impl(context):
     pass
+    
