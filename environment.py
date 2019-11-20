@@ -8,15 +8,18 @@ from Pyautomators.mouse_teclado import Teclado
 from Pyautomators.mouse_teclado import Mouse
 from Pyautomators.Verifica import Valida
 from Pyautomators import Ambiente
-from pages.pages.TronWebPage import TronWeb
-from pages.pages.ConsultaParametroPage import ConsultaParametro
-from pages.pages.CadastroApolicesEnvioRe21Page import CadastroApolice
-from pages.pages.IncluiParametroPage import IncluiParametro
-from pages.pages.EmissaoDeApolicesEEndossoPage import EmissaoDeApolices
 from data.data import Data
-from Pyautomators.Documentacao import printarTela
-import os
 import getpass
+import os
+from pages.pages.PageLogin import PageLogin
+from pages.pages.PageConsultaGestoresApf import PageConsultaGestoresApf
+from pages.pages.PageEditarGestoresApf import PageEditarGestoresApf
+
+from pages.pages.PageConsultaRegrasApf import PageConsultaRegrasApf
+from pages.pages.PageEditarRegrasApf import PageEditarRegrasApf
+
+from Pyautomators.Documentacao import printarTela
+
 
 
 # Modulos extras
@@ -32,14 +35,12 @@ def before_feature(context,feature):
 
 def before_scenario(context,scenario):
 	context.app = Desk('C:\JTron_Homolog\JMenuTron.bat',Driver_Winium='driver\Winium.Desktop.Driver.exe')
-	# context.login = Login(context.app)
-	context.consulta_parametro = ConsultaParametro(context.app)
-#	context.menu = MenuPrincipal(context.app)
-	context.tronweb = TronWeb(context.app)
-	context.inclui_parametro = IncluiParametro(context.app, context.tronweb)
-	context.dados = Data(context.app)
-	context.cadastro_apolice = CadastroApolice(context.app)
-	context.emissao = EmissaoDeApolices(context.app)
+	context.loginmenu          = PageLogin(context.app)
+	context.gestoresapf        = PageConsultaGestoresApf(context.app)
+	context.editagestoresapf   = PageEditarGestoresApf(context.app)
+	context.regrasapf          = PageConsultaRegrasApf(context.app)
+	context.editaregrasapf     = PageEditarRegrasApf(context.app)
+
 
 def before_step(context,step):
 	pass
@@ -55,4 +56,3 @@ def after_feature(context,feature):
 
 def after_all(context):
 	pass
-
